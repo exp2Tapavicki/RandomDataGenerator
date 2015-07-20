@@ -1,0 +1,514 @@
+<com.afowd.ormClasses.Worker>
+  <id>0</id>
+  <age>66</age>
+  <firstName>Josh</firstName>
+  <lastName>Franklin</lastName>
+  <isWorkingNow>true</isWorkingNow>
+  <gender>false</gender>
+  <solary>14087.2555</solary>
+  <hourPrice>10.55</hourPrice>
+  <hourPrice1>26.84714</hourPrice1>
+  <streetNumber>16</streetNumber>
+  <streetNumber1>1947</streetNumber1>
+  <height>151</height>
+  <height1>219</height1>
+  <workingHours>570</workingHours>
+  <workingHours1>2183.48427</workingHours1>
+  <streetNumber2>68</streetNumber2>
+  <middleName>Z</middleName>
+  <middleName1>Q</middleName1>
+  <birthDate>2002-02-06 12:30:13.736 UTC</birthDate>
+  <jobAl>
+    <com.afowd.ormClasses.Job>
+      <id>0</id>
+      <name>Dylan Q Miller</name>
+      <hm>
+        <entry>
+          <com.afowd.ormClasses.Worker>
+            <id>2</id>
+            <yearsOfExpirenceTotal>51</yearsOfExpirenceTotal>
+            <age>87</age>
+            <firstName>Josh</firstName>
+            <lastName>Yost</lastName>
+            <isWorkingNow>false</isWorkingNow>
+            <gender>false</gender>
+            <solary>5307.46273</solary>
+            <solary1>12512.76054</solary1>
+            <hourPrice>79.17</hourPrice>
+            <hourPrice1>15.14703</hourPrice1>
+            <streetNumber>11</streetNumber>
+            <streetNumber1>727</streetNumber1>
+            <height>121</height>
+            <height1>220</height1>
+            <workingHours>537</workingHours>
+            <workingHours1>5164.82623</workingHours1>
+            <streetNumber2>90</streetNumber2>
+            <middleName>A</middleName>
+            <middleName1>E</middleName1>
+            <birthDate>2013-08-24 16:24:14.65 UTC</birthDate>
+            <jobAl>
+              <com.afowd.ormClasses.Job>
+                <id>1</id>
+                <name>Larry Z Deere</name>
+                <hm>
+                  <entry>
+                    <com.afowd.ormClasses.Worker>
+                      <id>3</id>
+                      <yearsOfExpirenceTotal>41</yearsOfExpirenceTotal>
+                      <age>5</age>
+                      <firstName>Joe</firstName>
+                      <lastName>Krippner</lastName>
+                      <isWorkingNow>true</isWorkingNow>
+                      <gender>false</gender>
+                      <solary>3854.0085</solary>
+                      <solary1>16420.02542</solary1>
+                      <hourPrice>64.61</hourPrice>
+                      <hourPrice1>95.25009</hourPrice1>
+                      <streetNumber>0</streetNumber>
+                      <streetNumber1>565</streetNumber1>
+                      <height>32</height>
+                      <height1>219</height1>
+                      <workingHours>516</workingHours>
+                      <workingHours1>1339.17010</workingHours1>
+                      <streetNumber2>98</streetNumber2>
+                      <middleName>R</middleName>
+                      <middleName1>P</middleName1>
+                      <birthDate>1974-10-29 04:45:05.425 UTC</birthDate>
+                      <jobAl>
+                        <com.afowd.ormClasses.Job>
+                          <id>2</id>
+                          <name>Alison C Shiley</name>
+                          <hm>
+                            <entry>
+                              <com.afowd.ormClasses.Worker reference="../../../../../../../../../.."/>
+                              <com.afowd.ormClasses.Contacts>
+                                <id>1</id>
+                                <worker>
+                                  <id>1</id>
+                                  <yearsOfExpirenceTotal>67</yearsOfExpirenceTotal>
+                                  <age>80</age>
+                                  <firstName>Donna</firstName>
+                                  <lastName>Shiley</lastName>
+                                  <isWorkingNow>true</isWorkingNow>
+                                  <gender>true</gender>
+                                  <solary>16671.18326</solary>
+                                  <solary1>5755.38957</solary1>
+                                  <hourPrice>54.89</hourPrice>
+                                  <hourPrice1>23.71933</hourPrice1>
+                                  <streetNumber>17</streetNumber>
+                                  <streetNumber1>151</streetNumber1>
+                                  <height>61</height>
+                                  <workingHours>598</workingHours>
+                                  <workingHours1>5674.06764</workingHours1>
+                                  <streetNumber2>51</streetNumber2>
+                                  <middleName>U</middleName>
+                                  <middleName1>H</middleName1>
+                                  <jobAl>
+                                    <com.afowd.ormClasses.Job reference="../../../../../../../../../../../../../../../.."/>
+                                    <com.afowd.ormClasses.Job reference="../../../../../.."/>
+                                    <com.afowd.ormClasses.Job reference="../../../../../../../../../../.."/>
+                                  </jobAl>
+                                  <adressAl>
+                                    <com.afowd.ormClasses.Adress>
+                                      <id>1</id>
+                                      <worker reference="../../../../../../../../../../../../../../../../../../.."/>
+                                      <city>b92090a0-883c-4bce-a633-9a42e9be8ef7</city>
+                                      <list>
+                                        <string>1c97e65e-bf5a-4cc0-9803-13925f9465cf</string>
+                                        <string>6555bdd1-dff4-453e-8cdd-479ffd7129f6</string>
+                                        <string>8f3bc31f-29a8-493a-8c2e-f6381dcf0942</string>
+                                      </list>
+                                      <anotherAdress>
+                                        <id>2</id>
+                                        <worker reference="../../../../../../../../../../../../../../../../../../../.."/>
+                                        <city>f04e80c5-bdb2-465d-ac51-0b1e8055eb3c</city>
+                                        <list>
+                                          <string>5719c51f-0dc0-4eee-aac0-605498c02840</string>
+                                          <string>719d3025-0ba9-47eb-9626-5dcb0fded2b5</string>
+                                          <null/>
+                                        </list>
+                                        <anotherAdress2>
+                                          <id>2</id>
+                                          <worker reference="../../../../../../../../../../../../../../../.."/>
+                                          <city>f6784ba7-2b39-4906-8978-6e6e8cb17efa</city>
+                                          <adress>ac3aa3bd-6656-46f9-806f-1dbb1f80e0dd</adress>
+                                          <list>
+                                            <string>ecfb117f-6bc9-4256-bf32-c8b36c45a150</string>
+                                            <string>61fbefd8-6af3-48b0-8428-ace80d4cfc46</string>
+                                            <string>903d5bc7-3ae5-40be-b2cf-af5e7c12b388</string>
+                                          </list>
+                                        </anotherAdress2>
+                                      </anotherAdress>
+                                      <streetNumber>160</streetNumber>
+                                      <streetNumber2>108</streetNumber2>
+                                    </com.afowd.ormClasses.Adress>
+                                    <com.afowd.ormClasses.Adress reference="../com.afowd.ormClasses.Adress"/>
+                                    <com.afowd.ormClasses.Adress>
+                                      <id>2</id>
+                                      <worker reference="../../../../../../../../../../../../../../../../../../.."/>
+                                      <city>a9bc0e37-1002-430f-b3c8-f2447efc0c71</city>
+                                      <adress>61fac156-c675-4740-a5f9-8049914f3821</adress>
+                                      <list>
+                                        <string>80d72409-e877-4a78-bd17-c02c19b544d7</string>
+                                        <null/>
+                                        <string>e2bd4309-7b6e-453a-8a6c-25ba8d6f197a</string>
+                                      </list>
+                                      <anotherAdress>
+                                        <id>1</id>
+                                        <worker reference="../../../../../../../../../.."/>
+                                        <adress>0a3acd4c-0712-45b6-b0dc-749dc1e8c953</adress>
+                                        <list>
+                                          <null/>
+                                          <string>8ed3838c-a8d3-432a-8a91-400917b06da3</string>
+                                          <null/>
+                                        </list>
+                                        <anotherAdress2>
+                                          <id>1</id>
+                                          <worker reference="../../../../.."/>
+                                          <city>c0b25941-97e5-4c00-9b5e-45fe1e81dbcb</city>
+                                          <list>
+                                            <string>79ee8cf3-7866-42b3-a52d-5b8a19fadc84</string>
+                                            <string>f189883e-549b-4308-ac6e-799e7e530164</string>
+                                            <string>f67bf14b-d17b-4608-9c06-4db1cafa50c3</string>
+                                          </list>
+                                        </anotherAdress2>
+                                      </anotherAdress>
+                                      <streetNumber>177</streetNumber>
+                                      <streetNumber2>85</streetNumber2>
+                                    </com.afowd.ormClasses.Adress>
+                                  </adressAl>
+                                  <adress reference="../adressAl/com.afowd.ormClasses.Adress"/>
+                                  <hmAdresses>
+                                    <entry>
+                                      <com.afowd.ormClasses.AnotherAdress>
+                                        <id>0</id>
+                                        <worker reference="../../../.."/>
+                                        <city>e869aa48-a39a-4c45-b04a-30cb61e897e1</city>
+                                        <adress>1f47b459-afe9-44ef-beec-303d6202a18e</adress>
+                                        <list>
+                                          <string>ad90d392-c8c2-4661-9d98-e5eec46060ad</string>
+                                          <string>470e4fc7-0224-49a6-a1d7-03bd2d5b5ee5</string>
+                                          <string>e744e695-7327-40bd-aaa1-a33fd0db559f</string>
+                                        </list>
+                                        <anotherAdress2 reference="../../../../adressAl/com.afowd.ormClasses.Adress[3]/anotherAdress/anotherAdress2"/>
+                                      </com.afowd.ormClasses.AnotherAdress>
+                                      <com.afowd.ormClasses.Adress reference="../../../adressAl/com.afowd.ormClasses.Adress[3]"/>
+                                    </entry>
+                                    <entry>
+                                      <com.afowd.ormClasses.AnotherAdress reference="../../../adressAl/com.afowd.ormClasses.Adress[3]/anotherAdress"/>
+                                      <com.afowd.ormClasses.Adress reference="../../../adressAl/com.afowd.ormClasses.Adress[3]"/>
+                                    </entry>
+                                  </hmAdresses>
+                                  <hmAdress>
+                                    <entry>
+                                      <null/>
+                                      <com.afowd.ormClasses.Adress reference="../../../adressAl/com.afowd.ormClasses.Adress"/>
+                                    </entry>
+                                    <entry>
+                                      <string>b0152a69-e188-48de-bb8e-f3c4dc3288eb</string>
+                                      <com.afowd.ormClasses.Adress>
+                                        <id>0</id>
+                                        <worker reference="../../../../../../../../../../../../../../.."/>
+                                        <city>d1ca5d25-53b2-4dbb-bf50-697ce348c3f4</city>
+                                        <adress>f5713c73-96fb-43c2-8387-5d794b23afda</adress>
+                                        <list>
+                                          <null/>
+                                          <string>bbffec86-c9f8-4915-b578-aaa219e4ad41</string>
+                                          <string>99e9f27a-1e1c-41a3-8495-ee2e2118033c</string>
+                                        </list>
+                                        <anotherAdress reference="../../../../adressAl/com.afowd.ormClasses.Adress/anotherAdress"/>
+                                        <streetNumber>22</streetNumber>
+                                        <streetNumber2>62</streetNumber2>
+                                      </com.afowd.ormClasses.Adress>
+                                    </entry>
+                                    <entry>
+                                      <string>34244708-0a48-4742-933c-c9e562e6ffaa</string>
+                                      <com.afowd.ormClasses.Adress reference="../../entry[2]/com.afowd.ormClasses.Adress"/>
+                                    </entry>
+                                  </hmAdress>
+                                  <hmAnotherAdress>
+                                    <entry>
+                                      <com.afowd.ormClasses.AnotherAdress reference="../../../adressAl/com.afowd.ormClasses.Adress/anotherAdress"/>
+                                      <string>70fbdc4a-1b54-427e-bb34-f08472e3c776</string>
+                                    </entry>
+                                    <entry>
+                                      <com.afowd.ormClasses.AnotherAdress reference="../../../hmAdresses/entry/com.afowd.ormClasses.AnotherAdress"/>
+                                      <string>80e41986-6dc8-4bbc-8aaa-470f9e380515</string>
+                                    </entry>
+                                  </hmAnotherAdress>
+                                  <hmBasic>
+                                    <entry>
+                                      <string>20d05a66-9956-472d-a0f2-d4249c8cab0a</string>
+                                      <int>-1341357090</int>
+                                    </entry>
+                                    <entry>
+                                      <string>d579338f-d176-4a3f-914e-8c885e3ec03a</string>
+                                      <int>-2055595871</int>
+                                    </entry>
+                                    <entry>
+                                      <string>2446550f-02a0-4928-ad52-53d6c75dbc9e</string>
+                                      <int>-1505246489</int>
+                                    </entry>
+                                  </hmBasic>
+                                  <currentJob reference="../../../../.."/>
+                                  <contacts>
+                                    <id>2</id>
+                                    <worker reference="../../../../../../../../../../../../../../../../../.."/>
+                                    <city>22588c73-5829-4365-ad72-953c74968719</city>
+                                    <adress>ff2d79c3-0ba9-4f6f-ab0c-bfcf36862571</adress>
+                                    <list>
+                                      <null/>
+                                      <string>de3b57ca-32e7-4b58-85a9-7e7ea764f0d5</string>
+                                      <string>39292a0c-2b00-42a7-b82c-bc2df5413db5</string>
+                                    </list>
+                                  </contacts>
+                                </worker>
+                                <adress>0a2b9609-f731-47e3-a4b5-3265af58e3d5</adress>
+                                <list>
+                                  <string>eec13699-1b82-40aa-9139-3f45d60bea2b</string>
+                                  <string>90ef907a-ae0f-43e9-99c9-843345ce2095</string>
+                                  <string>2e23fc0c-9f6c-48ec-911c-72d857d3cd46</string>
+                                </list>
+                              </com.afowd.ormClasses.Contacts>
+                            </entry>
+                            <entry>
+                              <com.afowd.ormClasses.Worker reference="../../../../.."/>
+                              <com.afowd.ormClasses.Contacts reference="../../entry/com.afowd.ormClasses.Contacts"/>
+                            </entry>
+                            <entry>
+                              <com.afowd.ormClasses.Worker reference="../../entry/com.afowd.ormClasses.Contacts/worker"/>
+                              <com.afowd.ormClasses.Contacts>
+                                <id>0</id>
+                                <worker reference="../../../../../../../../../../.."/>
+                                <city>62e92427-2f92-4283-9d8c-84f2e48a8805</city>
+                                <adress>ab7c1e8b-e373-48fe-8540-4c344bfcd707</adress>
+                                <list>
+                                  <string>aa21de80-ea51-4881-8a13-71e0665effef</string>
+                                  <string>9e3461e2-132a-47d3-a0de-af7e34ee739f</string>
+                                  <string>23d4b3d1-1022-4c8d-a6f3-fa2377e599b6</string>
+                                </list>
+                              </com.afowd.ormClasses.Contacts>
+                            </entry>
+                          </hm>
+                          <colWorker>
+                            <com.afowd.ormClasses.Worker reference="../../hm/entry/com.afowd.ormClasses.Contacts/worker"/>
+                            <com.afowd.ormClasses.Worker reference="../../hm/entry/com.afowd.ormClasses.Contacts/worker"/>
+                            <com.afowd.ormClasses.Worker reference="../../../../../../../../.."/>
+                            <com.afowd.ormClasses.Worker reference="../../../../../../../../.."/>
+                          </colWorker>
+                          <worker reference="../hm/entry/com.afowd.ormClasses.Contacts/worker"/>
+                        </com.afowd.ormClasses.Job>
+                        <com.afowd.ormClasses.Job reference="../../../../.."/>
+                        <com.afowd.ormClasses.Job reference="../com.afowd.ormClasses.Job"/>
+                      </jobAl>
+                      <adressAl>
+                        <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+                        <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress"/>
+                        <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+                      </adressAl>
+                      <adress reference="../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+                      <hmAdresses>
+                        <entry>
+                          <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress/anotherAdress"/>
+                          <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+                        </entry>
+                        <entry>
+                          <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdresses/entry/com.afowd.ormClasses.AnotherAdress"/>
+                          <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+                        </entry>
+                      </hmAdresses>
+                      <hmAdress>
+                        <entry>
+                          <string>4b7520c4-7215-4366-a327-0777b72475fc</string>
+                          <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+                        </entry>
+                        <entry>
+                          <string>5db2cc5a-59ae-4357-be2f-fdd9e1007c4d</string>
+                          <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+                        </entry>
+                        <entry>
+                          <string>cf2c3384-72d8-4dc1-bf99-6cbaefba24c7</string>
+                          <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+                        </entry>
+                      </hmAdress>
+                      <hmAnotherAdress>
+                        <entry>
+                          <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]/anotherAdress"/>
+                          <string>37cc888d-7541-43d2-ac20-d77e1300ceb7</string>
+                        </entry>
+                      </hmAnotherAdress>
+                      <hmBasic>
+                        <entry>
+                          <string>239ad6d4-2ca2-4681-8ba5-ee130167c8d1</string>
+                          <int>10049441</int>
+                        </entry>
+                        <entry>
+                          <string>f2a1771a-a194-4e7c-8534-214b2826e5e4</string>
+                          <null/>
+                        </entry>
+                        <entry>
+                          <string>e4b5bb02-1a6d-4147-a716-c1957d2d8cb6</string>
+                          <int>2086437373</int>
+                        </entry>
+                      </hmBasic>
+                      <currentJob reference="../../../.."/>
+                      <contacts reference="../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts"/>
+                    </com.afowd.ormClasses.Worker>
+                    <com.afowd.ormClasses.Contacts reference="../com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry[3]/com.afowd.ormClasses.Contacts"/>
+                  </entry>
+                  <entry>
+                    <com.afowd.ormClasses.Worker reference="../../entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker"/>
+                    <com.afowd.ormClasses.Contacts reference="../../entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/contacts"/>
+                  </entry>
+                  <entry>
+                    <com.afowd.ormClasses.Worker reference="../../../../../../../../../.."/>
+                    <com.afowd.ormClasses.Contacts reference="../../entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry[3]/com.afowd.ormClasses.Contacts"/>
+                  </entry>
+                </hm>
+                <colWorker>
+                  <com.afowd.ormClasses.Worker reference="../../../.."/>
+                  <com.afowd.ormClasses.Worker reference="../../hm/entry/com.afowd.ormClasses.Worker"/>
+                  <com.afowd.ormClasses.Worker reference="../../hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker"/>
+                  <com.afowd.ormClasses.Worker reference="../../hm/entry/com.afowd.ormClasses.Worker"/>
+                </colWorker>
+                <worker reference="../../.."/>
+              </com.afowd.ormClasses.Job>
+              <com.afowd.ormClasses.Job reference="../com.afowd.ormClasses.Job"/>
+              <com.afowd.ormClasses.Job reference="../../../../.."/>
+            </jobAl>
+            <adressAl>
+              <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress"/>
+              <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress"/>
+              <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+            </adressAl>
+            <adress reference="../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+            <hmAdresses>
+              <entry>
+                <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress/anotherAdress"/>
+                <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress"/>
+              </entry>
+              <entry>
+                <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdresses/entry/com.afowd.ormClasses.AnotherAdress"/>
+                <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+              </entry>
+            </hmAdresses>
+            <hmAdress>
+              <entry>
+                <string>51216aef-d996-4c3c-9ef6-01f5a8c35eec</string>
+                <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+              </entry>
+              <entry>
+                <string>b5a33163-1c2d-4c17-a1ce-2a6a8fd45766</string>
+                <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+              </entry>
+              <entry>
+                <string>a52dff1a-8356-494a-8639-bdb1604419c3</string>
+                <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+              </entry>
+            </hmAdress>
+            <hmAnotherAdress>
+              <entry>
+                <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress/anotherAdress"/>
+                <string>765b30b8-eff1-4531-9dcf-b20f2d4e50e3</string>
+              </entry>
+              <entry>
+                <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdresses/entry/com.afowd.ormClasses.AnotherAdress"/>
+                <string>31cdfb85-72e2-4b7b-9ebe-871d3c6aa12b</string>
+              </entry>
+            </hmAnotherAdress>
+            <hmBasic>
+              <entry>
+                <string>de412a31-4078-492b-ab55-ee8a59b64f71</string>
+                <int>809007913</int>
+              </entry>
+              <entry>
+                <null/>
+                <int>1585042717</int>
+              </entry>
+              <entry>
+                <string>bddc61be-54b3-43be-8800-cb8a0a93581a</string>
+                <int>-692400969</int>
+              </entry>
+            </hmBasic>
+            <currentJob reference="../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job"/>
+            <contacts reference="../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry[3]/com.afowd.ormClasses.Contacts"/>
+          </com.afowd.ormClasses.Worker>
+          <com.afowd.ormClasses.Contacts reference="../com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/contacts"/>
+        </entry>
+        <entry>
+          <com.afowd.ormClasses.Worker reference="../../entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker"/>
+          <com.afowd.ormClasses.Contacts reference="../../entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts"/>
+        </entry>
+      </hm>
+      <colWorker>
+        <com.afowd.ormClasses.Worker reference="../../hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker"/>
+        <com.afowd.ormClasses.Worker reference="../../../.."/>
+        <com.afowd.ormClasses.Worker reference="../../hm/entry/com.afowd.ormClasses.Worker"/>
+        <com.afowd.ormClasses.Worker reference="../../hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker"/>
+      </colWorker>
+      <worker reference="../hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker"/>
+    </com.afowd.ormClasses.Job>
+    <com.afowd.ormClasses.Job reference="../com.afowd.ormClasses.Job"/>
+    <com.afowd.ormClasses.Job reference="../com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job"/>
+  </jobAl>
+  <adressAl>
+    <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]"/>
+    <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+    <com.afowd.ormClasses.Adress reference="../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress"/>
+  </adressAl>
+  <adress reference="../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+  <hmAdresses>
+    <entry>
+      <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdresses/entry/com.afowd.ormClasses.AnotherAdress"/>
+      <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+    </entry>
+    <entry>
+      <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]/anotherAdress"/>
+      <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+    </entry>
+  </hmAdresses>
+  <hmAdress>
+    <entry>
+      <string>ddf82c56-c039-4ce1-b628-9b57112fb19b</string>
+      <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+    </entry>
+    <entry>
+      <string>b4b88e5b-4919-42f9-8e3f-176725dd7538</string>
+      <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdress/entry[2]/com.afowd.ormClasses.Adress"/>
+    </entry>
+    <entry>
+      <string>9955a161-8a86-4bd7-9854-3cbd8b5282e0</string>
+      <com.afowd.ormClasses.Adress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress"/>
+    </entry>
+  </hmAdress>
+  <hmAnotherAdress>
+    <entry>
+      <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress/anotherAdress"/>
+      <string>cee52bee-95a4-4efa-8bf9-23f6f1ac2333</string>
+    </entry>
+    <entry>
+      <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/hmAdresses/entry/com.afowd.ormClasses.AnotherAdress"/>
+      <string>307a9739-40ae-4196-942f-02233e2dd583</string>
+    </entry>
+    <entry>
+      <com.afowd.ormClasses.AnotherAdress reference="../../../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts/worker/adressAl/com.afowd.ormClasses.Adress[3]/anotherAdress"/>
+      <string>a80c8107-c3f0-4797-a191-79c465995563</string>
+    </entry>
+  </hmAnotherAdress>
+  <hmBasic>
+    <entry>
+      <string>e37d51ac-9cc1-4cb5-94b5-60a861f9753f</string>
+      <int>-1222091600</int>
+    </entry>
+    <entry>
+      <null/>
+      <null/>
+    </entry>
+    <entry>
+      <string>28756df5-09fc-4cd8-98c3-7e37afff6520</string>
+      <int>-1538103509</int>
+    </entry>
+  </hmBasic>
+  <currentJob reference="../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job"/>
+  <contacts reference="../jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Worker/jobAl/com.afowd.ormClasses.Job/hm/entry/com.afowd.ormClasses.Contacts"/>
+</com.afowd.ormClasses.Worker>
