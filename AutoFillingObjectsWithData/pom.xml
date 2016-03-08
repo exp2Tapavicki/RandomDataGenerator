@@ -26,7 +26,7 @@
 		<xstream.version>1.4.5</xstream.version>
 
 		<!-- jasperreports -->
-		<commons-collections.version>3.2.1</commons-collections.version>
+		<commons-collections.version>3.2.2</commons-collections.version>
 		<jaxp-api.version>1.4.2</jaxp-api.version>
 		<jfreechart.version>1.0.12</jfreechart.version>
 		<barbecue.version>1.5-beta1</barbecue.version>
@@ -100,7 +100,7 @@
 
 		<!-- <dependency> <groupId>commons-logging</groupId> <artifactId>commons-logging</artifactId> 
 			<version>1.1.1</version> </dependency> <dependency> <groupId>commons-collections</groupId> 
-			<artifactId>commons-collections</artifactId> <version>3.2.1</version> </dependency> 
+			<artifactId>commons-collections</artifactId> <version>3.2.2</version> </dependency> 
 			<dependency> <groupId>commons-digester</groupId> <artifactId>commons-digester</artifactId> 
 			<version>2.1</version> </dependency> <dependency> <groupId>xml-apis</groupId> 
 			<artifactId>xml-apis</artifactId> <version>1.3.04</version> </dependency> 
