@@ -1,205 +1,237 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.afowd</groupId>
-	<artifactId>AutoFillingObjectsWithData</artifactId>
-	<version>1.0</version>
-	<name>AutoFillingObjectsWithData</name>
-	<packaging>jar</packaging>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.afowd</groupId>
+    <artifactId>AutoFillingObjectsWithData</artifactId>
+    <version>1.0</version>
+    <name>AutoFillingObjectsWithData</name>
+    <packaging>jar</packaging>
 
-	<properties>
-		<!-- Test -->
-		<junit.version>3.8.1</junit.version>
+    <properties>
+        <!-- joda time -->
+        <joda-time.version>2.9.3</joda-time.version>
+        <!-- guava -->
+        <guava.version>19.0</guava.version>
+        <!-- Test -->
+        <junit.version>4.12</junit.version>
 
-		<!-- apache poi -->
-		<poi.version>3.12-beta1</poi.version>
-		<commons-codec.version>1.5</commons-codec.version>
-		<poi-ooxml-schemas.version>3.12-beta1</poi-ooxml-schemas.version>
-		<poi-ooxml.version>3.12-beta1</poi-ooxml.version>
-		<poi-scratchpad.version>3.12-beta1</poi-scratchpad.version>
-		<xmlbeans.version>2.6.0</xmlbeans.version>
+        <!-- apache poi -->
+        <poi.version>3.15-beta1</poi.version>
+        <commons-codec.version>1.10</commons-codec.version>
+        <poi-ooxml-schemas.version>3.15-beta1</poi-ooxml-schemas.version>
+        <poi-ooxml.version>3.15-beta1</poi-ooxml.version>
+        <poi-scratchpad.version>3.15-beta1</poi-scratchpad.version>
+        <xmlbeans.version>2.6.0</xmlbeans.version>
 
-		<!-- log4j -->
-		<log4j.version>1.2.14</log4j.version>
+        <!-- log4j -->
+        <log4j.version>1.2.17</log4j.version>
 
-		<!-- xstram -->
-		<xstream.version>1.4.5</xstream.version>
+        <!-- xstram -->
+        <xstream.version>1.4.9</xstream.version>
 
-		<!-- jasperreports -->
-		<commons-collections.version>3.2.2</commons-collections.version>
-		<jaxp-api.version>1.4.2</jaxp-api.version>
-		<jfreechart.version>1.0.12</jfreechart.version>
-		<barbecue.version>1.5-beta1</barbecue.version>
-		<commons-digester.version>1.7</commons-digester.version>
-		<jxl.version>2.5.7</jxl.version>
-		<xml-apis-ext.version>1.3.04</xml-apis-ext.version>
-		<jasperreports-fonts.version>6.0.0</jasperreports-fonts.version>
-		<DynamicJasper.version>3.0.5</DynamicJasper.version>
-		<jasperreports.version>3.5.3</jasperreports.version>
+        <!-- jasperreports -->
+        <commons-collections.version>3.2.2</commons-collections.version>
+        <jaxp-api.version>1.4.2</jaxp-api.version>
+        <jfreechart.version>1.0.19</jfreechart.version>
+        <barbecue.version>1.5-beta1</barbecue.version>
+        <commons-digester.version>2.1</commons-digester.version>
+        <jxl.version>2.6.12</jxl.version>
+        <xml-apis-ext.version>1.3.04</xml-apis-ext.version>
+        <jasperreports-fonts.version>6.0.0</jasperreports-fonts.version>
+        <DynamicJasper.version>5.0.7</DynamicJasper.version>
+        <jasperreports.version>6.2.2</jasperreports.version>
+        <jackson.version>2.7.4</jackson.version>
+        <jackson-databind.version>2.0.0</jackson-databind.version>
 
-		<!-- dom4j -->
-		<dom4j.version>1.6.1</dom4j.version>
-		
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-	
-    
+        <!-- dom4j -->
+        <dom4j.version>1.6.1</dom4j.version>
 
-	<dependencies>
-		<!-- junit -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- apache poi -->
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>${poi.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>${commons-codec.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>${poi-ooxml-schemas.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>${poi-ooxml.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-scratchpad</artifactId>
-			<version>${poi-scratchpad.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.xmlbeans</groupId>
-			<artifactId>xmlbeans</artifactId>
-			<version>${xmlbeans.version}</version>
-		</dependency>
-		<!-- log4j -->
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
-		</dependency>
-		<!-- xstram -->
-		<dependency>
-			<groupId>com.thoughtworks.xstream</groupId>
-			<artifactId>xstream</artifactId>
-			<version>${xstream.version}</version>
-		</dependency>
-		<!-- jasperreports -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-		<!-- <dependency> <groupId>commons-logging</groupId> <artifactId>commons-logging</artifactId> 
-			<version>1.1.1</version> </dependency> <dependency> <groupId>commons-collections</groupId> 
-			<artifactId>commons-collections</artifactId> <version>3.2.2</version> </dependency> 
-			<dependency> <groupId>commons-digester</groupId> <artifactId>commons-digester</artifactId> 
-			<version>2.1</version> </dependency> <dependency> <groupId>xml-apis</groupId> 
-			<artifactId>xml-apis</artifactId> <version>1.3.04</version> </dependency> 
-			<dependency> <groupId>xml-apis</groupId> <artifactId>xml-apis-ext</artifactId> 
-			<version>1.3.04</version> </dependency> <dependency> <groupId>org.eclipse.jdt.core.compiler</groupId> 
-			<artifactId>ecj</artifactId> <version>4.3.1</version> </dependency> <dependency> 
-			<groupId>jfree</groupId> <artifactId>jfreechart</artifactId> <version>1.0.12</version> 
-			</dependency> <dependency> <groupId>jfree</groupId> <artifactId>jcommon</artifactId> 
-			<version>1.0.15</version> </dependency> <dependency> <groupId>org.apache.commons</groupId> 
-			<artifactId>commons-lang3</artifactId> <version>3.1</version> </dependency> 
-			<dependency> <groupId>com.fasterxml.jackson.core</groupId> <artifactId>jackson-core</artifactId> 
-			<version>2.1.4</version> </dependency> <dependency> <groupId>com.fasterxml.jackson.core</groupId> 
-			<artifactId>jackson-databind</artifactId> <version>2.1.4</version> </dependency> 
-			<dependency> <groupId>com.fasterxml.jackson.core</groupId> <artifactId>jackson-annotations</artifactId> 
-			<version>2.1.4</version> </dependency> <dependency> <groupId>org.apache.velocity</groupId> 
-			<artifactId>velocity</artifactId> <version>1.7</version> </dependency> <dependency> 
-			<groupId>commons-beanutils</groupId> <artifactId>commons-beanutils</artifactId> 
-			<version>1.9.0</version> </dependency> -->
-		<dependency>
-			<groupId>commons-collections</groupId>
-			<artifactId>commons-collections</artifactId>
-			<version>${commons-collections.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.xml</groupId>
-			<artifactId>jaxp-api</artifactId>
-			<version>${jaxp-api.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>jfree</groupId>
-			<artifactId>jfreechart</artifactId>
-			<version>${jfreechart.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sourceforge.barbecue</groupId>
-			<artifactId>barbecue</artifactId>
-			<version>${barbecue.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-digester</groupId>
-			<artifactId>commons-digester</artifactId>
-			<version>${commons-digester.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sourceforge.jexcelapi</groupId>
-			<artifactId>jxl</artifactId>
-			<version>${jxl.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>xml-apis</groupId>
-			<artifactId>xml-apis-ext</artifactId>
-			<version>${xml-apis-ext.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.jasperreports</groupId>
-			<artifactId>jasperreports-fonts</artifactId>
-			<version>${jasperreports-fonts.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>ar.com.fdvs</groupId>
-			<artifactId>DynamicJasper</artifactId>
-			<version>${DynamicJasper.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>jasperreports</groupId>
-			<artifactId>jasperreports</artifactId>
-			<version>${jasperreports.version}</version>
-		</dependency>
-		<!-- dom4j -->
-		<dependency>
-			<groupId>dom4j</groupId>
-			<artifactId>dom4j</artifactId>
-			<version>${dom4j.version}</version>
-		</dependency>
-	</dependencies>
-	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>resources</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.1</version>
-			</plugin>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source />
-					<target />
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+
+    <dependencies>
+        <!-- http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
+        </dependency>
+
+        <!-- http://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- http://mvnrepository.com/artifact/joda-time/joda-time -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time.version}</version>
+        </dependency>
+        <!-- guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <!-- junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- apache poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${commons-codec.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+            <version>${poi-ooxml-schemas.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi-ooxml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>${poi-scratchpad.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>${xmlbeans.version}</version>
+        </dependency>
+        <!-- log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <!-- xstram -->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>${xstream.version}</version>
+        </dependency>
+        <!-- jasperreports -->
+
+        <!-- <dependency> <groupId>commons-logging</groupId> <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version> </dependency> <dependency> <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId> <version>3.2.2</version> </dependency>
+            <dependency> <groupId>commons-digester</groupId> <artifactId>commons-digester</artifactId>
+            <version>2.1</version> </dependency> <dependency> <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId> <version>1.3.04</version> </dependency>
+            <dependency> <groupId>xml-apis</groupId> <artifactId>xml-apis-ext</artifactId>
+            <version>1.3.04</version> </dependency> <dependency> <groupId>org.eclipse.jdt.core.compiler</groupId>
+            <artifactId>ecj</artifactId> <version>4.3.1</version> </dependency> <dependency>
+            <groupId>jfree</groupId> <artifactId>jfreechart</artifactId> <version>1.0.12</version>
+            </dependency> <dependency> <groupId>jfree</groupId> <artifactId>jcommon</artifactId>
+            <version>1.0.15</version> </dependency> <dependency> <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId> <version>3.1</version> </dependency>
+            <dependency> <groupId>com.fasterxml.jackson.core</groupId> <artifactId>jackson-core</artifactId>
+            <version>2.1.4</version> </dependency> <dependency> <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId> <version>2.1.4</version> </dependency>
+            <dependency> <groupId>com.fasterxml.jackson.core</groupId> <artifactId>jackson-annotations</artifactId>
+            <version>2.1.4</version> </dependency> <dependency> <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId> <version>1.7</version> </dependency> <dependency>
+            <groupId>commons-beanutils</groupId> <artifactId>commons-beanutils</artifactId>
+            <version>1.9.0</version> </dependency> -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons-collections.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml</groupId>
+            <artifactId>jaxp-api</artifactId>
+            <version>${jaxp-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>${jfreechart.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.barbecue</groupId>
+            <artifactId>barbecue</artifactId>
+            <version>${barbecue.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>${commons-digester.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.jexcelapi</groupId>
+            <artifactId>jxl</artifactId>
+            <version>${jxl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis-ext</artifactId>
+            <version>${xml-apis-ext.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports-fonts</artifactId>
+            <version>${jasperreports-fonts.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ar.com.fdvs</groupId>
+            <artifactId>DynamicJasper</artifactId>
+            <version>${DynamicJasper.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>${jasperreports.version}</version>
+        </dependency>
+        <!-- dom4j -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>${dom4j.version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <sourceDirectory>src/java</sourceDirectory>
+        <testSourceDirectory>src/test</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>resources</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
