@@ -739,7 +739,7 @@ public class RandomDataUtil {
         if (sMethodName != null) {
             String sPropertyName = sMethodName.replace(Const.STRING_SET, Const.STRING_EMPTY);
             String sClassProperty = (Character.isUpperCase(sPropertyName.charAt(Const.ZERO)) ? Character.toLowerCase(sPropertyName.charAt(Const.ZERO)) + sPropertyName.substring(Const.ONE, sPropertyName.length()) : Character.toUpperCase(sPropertyName.charAt(Const.ZERO)) + sPropertyName.substring(Const.ONE, sPropertyName.length()));
-            boundary = hmBoundary.get(sSuperClassName.replace(sPackageFromClass + Const.COMMA_DELIMITER, Const.STRING_EMPTY) + Const.COMMA_DELIMITER + sClassProperty);
+            boundary = hmBoundary.get(sSuperClassName.replace(sPackageFromClass + Const.DOT_DELIMITER, Const.STRING_EMPTY) + Const.DOT_DELIMITER + sClassProperty);
             if (sClassName.equals(Enum.class.getName()) && boundary == null) {
                 boundary = new Boundary();
                 boundary.setObjMin(Const.ZERO);
