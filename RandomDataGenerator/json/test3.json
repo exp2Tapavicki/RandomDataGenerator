@@ -1,0 +1,395 @@
+{
+  "Worker": {
+    "id": 3,
+    "yearsOfExpirenceTotal": null,
+    "age": 32,
+    "firstName": "Larry",
+    "lastName": "Davis",
+    "gender": "MALE",
+    "gender1": "FEMALE",
+    "solary": 7778.56031,
+    "solary1": 14116.10428,
+    "hourPrice": 36.78,
+    "hourPrice1": 73.41057,
+    "streetNumber": 1,
+    "streetNumber1": null,
+    "height": 126,
+    "height1": 220,
+    "workingHours": 596,
+    "workingHours1": null,
+    "streetNumber2": 61,
+    "middleName": "T",
+    "middleName1": "V",
+    "birthDate": 549675817000,
+    "jobAl": [
+      {
+        "id": 1,
+        "name": "Andrew H Lincoln",
+        "hm": {
+          "null": {
+            "id": 1,
+            "worker": {
+              "id": 0,
+              "yearsOfExpirenceTotal": null,
+              "age": 56,
+              "firstName": "Michelle",
+              "lastName": "Clark",
+              "gender": "FEMALE",
+              "gender1": "MALE",
+              "solary": 16123.6038,
+              "solary1": 18585.70239,
+              "hourPrice": 12.65,
+              "hourPrice1": 16.28894,
+              "streetNumber": 8,
+              "streetNumber1": 466,
+              "height": 33,
+              "height1": null,
+              "workingHours": 600,
+              "workingHours1": 1795.15069,
+              "streetNumber2": 83,
+              "middleName": "W",
+              "middleName1": "E",
+              "birthDate": 1319438661000,
+              "jobAl": [
+                {
+                  "id": 0,
+                  "name": "Todd X Kushnir",
+                  "hm": {
+                    "null": 1,
+                    "fa6827d4-d1f0-4367-ae45-cdbba1707c08": {
+                      "id": 0,
+                      "worker": {
+                        "id": 2,
+                        "yearsOfExpirenceTotal": null,
+                        "age": 19,
+                        "firstName": "Nathan",
+                        "lastName": "Schmidt",
+                        "gender": "MALE",
+                        "gender1": "MALE",
+                        "solary": 15106.33052,
+                        "solary1": 3656.53923,
+                        "hourPrice": 89.87,
+                        "hourPrice1": 67.37741,
+                        "streetNumber": 1,
+                        "streetNumber1": 818,
+                        "height": 125,
+                        "height1": 220,
+                        "workingHours": 553,
+                        "workingHours1": 671.63062,
+                        "streetNumber2": 52,
+                        "middleName": "R",
+                        "middleName1": "W",
+                        "birthDate": 93287148000,
+                        "jobAl": [
+                          0,
+                          1,
+                          {
+                            "id": 2,
+                            "name": "Megan C Schmidt",
+                            "hm": {
+                              "d4f81c14-43e6-493a-90c0-34113fdb0530": 0,
+                              "78bb6c6e-ac6f-470e-b2c8-a4925ed14dd3": {
+                                "id": 2,
+                                "worker": {
+                                  "id": 1,
+                                  "yearsOfExpirenceTotal": null,
+                                  "age": 10,
+                                  "firstName": "Mary",
+                                  "lastName": "Bannister",
+                                  "gender": "MALE",
+                                  "gender1": "FEMALE",
+                                  "solary": 14891.3212,
+                                  "solary1": 4546.11334,
+                                  "hourPrice": 63.76,
+                                  "hourPrice1": 16.58527,
+                                  "streetNumber": 0,
+                                  "streetNumber1": 281,
+                                  "height": 131,
+                                  "height1": 219,
+                                  "workingHours": 522,
+                                  "workingHours1": 4909.74448,
+                                  "streetNumber2": 55,
+                                  "middleName": "J",
+                                  "middleName1": "I",
+                                  "birthDate": null,
+                                  "jobAl": [
+                                    0,
+                                    2,
+                                    2
+                                  ],
+                                  "adressAl": [
+                                    {
+                                      "id": 0,
+                                      "worker": 0,
+                                      "city": "f3f1208d-abb4-463a-9684-71fba0e835eb",
+                                      "adress": "9acc465f-032d-4769-9439-15880e3117f2",
+                                      "list": [
+                                        "java.util.ArrayList",
+                                        [
+                                          null,
+                                          "c11fdbfb-52f6-4f03-afc6-06ee89897e26",
+                                          null
+                                        ]
+                                      ],
+                                      "anotherAdress": {
+                                        "id": 2,
+                                        "city": "8516f132-f192-4fbc-9ad7-0ee61fca084b",
+                                        "adress": "9f3abf25-2412-4769-bf6d-5dcaa55fa462",
+                                        "list": [
+                                          "java.util.ArrayList",
+                                          [
+                                            "9c3db879-027e-4295-88d6-52e389cabd6a",
+                                            null,
+                                            "56223284-82cb-4818-89f4-31fc75757ef8"
+                                          ]
+                                        ]
+                                      },
+                                      "streetNumber": 157,
+                                      "streetNumber2": 123
+                                    },
+                                    {
+                                      "id": 1,
+                                      "worker": 3,
+                                      "city": null,
+                                      "adress": "a0909fc1-43b8-4fe4-8e34-317ee9515e7a",
+                                      "list": [
+                                        "java.util.ArrayList",
+                                        [
+                                          "f0f5d74b-a6ac-456c-b96e-12ec7a6a2ee6",
+                                          "65f016ed-9acd-4b76-b452-f17a65af16b4",
+                                          "a2770e26-0dc6-427d-8aa0-5991b60dd174"
+                                        ]
+                                      ],
+                                      "anotherAdress": {
+                                        "id": 1,
+                                        "city": "05a10bb9-3491-4d93-a9cd-885f13003656",
+                                        "adress": "51c7761b-f00f-43be-b853-1c0a79eaebe9",
+                                        "list": [
+                                          "java.util.ArrayList",
+                                          [
+                                            "eb27f76f-10e8-4471-98fe-f4ed1dce8b3e",
+                                            "a58008cb-e4b3-41f6-800f-04e69dd1925f",
+                                            null
+                                          ]
+                                        ]
+                                      },
+                                      "streetNumber": 191,
+                                      "streetNumber2": 63
+                                    },
+                                    0
+                                  ],
+                                  "adress": {
+                                    "id": 2,
+                                    "worker": 2,
+                                    "city": "5827d2d4-b170-41e7-8119-c92e91bac75e",
+                                    "adress": "63c063c8-09a4-41b5-8fb1-9a6deebfce32",
+                                    "list": [
+                                      "java.util.ArrayList",
+                                      [
+                                        "ac99a0a6-608c-48e9-b4b0-291b4a929980",
+                                        "2cb2c87d-6413-4167-8339-20caff076b1d",
+                                        null
+                                      ]
+                                    ],
+                                    "anotherAdress": {
+                                      "id": 0,
+                                      "city": null,
+                                      "adress": "8e1871bf-1616-4d77-bf9c-1f309bc5e0dd",
+                                      "list": [
+                                        "java.util.ArrayList",
+                                        [
+                                          "9ff34f78-5190-4c4a-a632-b0ce23c75edf",
+                                          "5af2ee9d-6068-43b3-a07c-ad76d8044502",
+                                          "bd9f9d06-8f8f-4a4a-b415-b0fce17adad7"
+                                        ]
+                                      ]
+                                    },
+                                    "streetNumber": 8,
+                                    "streetNumber2": 20
+                                  },
+                                  "hmAdresses": {
+                                    "7c2dcede-10f4-453a-abbd-355f1cbe3a7d": 2,
+                                    "e1d39a0a-d5bc-46d1-aea2-015ebce9bca9": 1,
+                                    "0670da7f-b685-4461-bff8-c50f5d2454ad": 2
+                                  },
+                                  "hmAdress": {
+                                    "bf800062-58c0-47dc-8307-1ce2a78ca968": 2,
+                                    "a1fddc77-c63f-499b-b68d-d56da6c31ba3": 0,
+                                    "91039bea-6b3c-4231-8efc-de104c58963e": 2
+                                  },
+                                  "hmAnotherAdress": {
+                                    "c69bc567-59c6-4f11-bf46-f1d5d2f0affc": null,
+                                    "2e58f72e-afa8-4c4d-aba4-f66ea3da2613": "e3a65502-1f8c-4ce9-90de-aa6748a444b8",
+                                    "2d296b0a-2f91-4b22-9fde-1b1d629d341a": "5898bc6e-9b89-49ab-bed3-28a9a30a9a59"
+                                  },
+                                  "hmBasic": {
+                                    "null": -2147483648,
+                                    "7d3f6cc2-ded5-48a4-9edf-a327d08c7e69": -2147483648,
+                                    "293d2180-21d7-47c3-860f-748e6873a28c": null
+                                  },
+                                  "currentJob": 1,
+                                  "contacts": 1,
+                                  "workingNow": false
+                                },
+                                "city": "8189d2ae-b4f7-4612-828e-01b216f9857f",
+                                "adress": "bc8717cc-e3d0-410e-b657-9e270a7dc5cd",
+                                "list": [
+                                  "java.util.ArrayList",
+                                  [
+                                    "c6561e5a-ddde-40ba-a52f-20ce10fb7565",
+                                    null,
+                                    "7df68e07-cce8-4cb2-b24c-cb5dde60d94b"
+                                  ]
+                                ]
+                              },
+                              "9f2af359-e1fb-4fe3-b9f4-588b2984e9e8": 0
+                            },
+                            "colWorker": [
+                              0,
+                              2,
+                              0,
+                              2
+                            ],
+                            "worker": 0
+                          }
+                        ],
+                        "adressAl": [
+                          1,
+                          2,
+                          0
+                        ],
+                        "adress": 0,
+                        "hmAdresses": {
+                          "f1d41866-e946-470e-863e-f663fd2d4507": 0,
+                          "45af97bb-d93a-45ee-8f67-4591d8bb39b6": 2,
+                          "044e88ea-83c0-44f3-a574-2db29e7d3883": 2
+                        },
+                        "hmAdress": {
+                          "91a3edef-fac7-4db1-8bf3-9ba3fb95f1b9": 1,
+                          "d5b0070b-702c-41bb-9f75-cbaebdd8433f": 0,
+                          "db089d80-0d1f-4338-8835-bf218d09ae1d": 0
+                        },
+                        "hmAnotherAdress": {
+                          "61718882-0dd0-4d18-b141-cd6734d1dd56": null,
+                          "b23946a5-9899-4fa3-837b-ee3c4842547c": "19aa5c89-ca9f-4edf-a016-5f69e354d1aa",
+                          "09b818a3-bb09-43f3-8bd9-24538647f7c2": null
+                        },
+                        "hmBasic": {
+                          "null": -2147483648,
+                          "6d049c5e-a615-481d-8820-7a612e65c400": null,
+                          "f3cbcb19-3b94-49c0-bcbd-c8f3822f8e69": -2147483648
+                        },
+                        "currentJob": 2,
+                        "contacts": 0,
+                        "workingNow": false
+                      },
+                      "city": "6a2262d5-e4c4-4c3f-af82-fb75a260f021",
+                      "adress": "a12a7b5f-aea2-41f7-93c6-1089241b9a71",
+                      "list": [
+                        "java.util.ArrayList",
+                        [
+                          null,
+                          "d6ab984d-78aa-4a06-a419-71f39231d5ed",
+                          null
+                        ]
+                      ]
+                    },
+                    "de64fb22-4e95-4271-95e0-a0aea08fb409": 0
+                  },
+                  "colWorker": [
+                    3,
+                    2,
+                    0,
+                    3
+                  ],
+                  "worker": 0
+                },
+                0,
+                0
+              ],
+              "adressAl": [
+                1,
+                2,
+                1
+              ],
+              "adress": 1,
+              "hmAdresses": {
+                "null": 0,
+                "7a5751d0-65ab-4336-b92e-0786af6ab0c8": 2,
+                "536b2e6f-ed9b-4040-859d-d51a50cfd1a6": 0
+              },
+              "hmAdress": {
+                "null": 2,
+                "4cddcd81-67f2-4a16-9c1e-0be5c104433e": 2,
+                "dc023203-ac65-40ee-89cf-91736bd0c67d": 2
+              },
+              "hmAnotherAdress": {
+                "09b22b00-667b-4ce9-baae-1ee224a4e4fd": "56e705d3-562a-4618-8c7d-7227529fb80b",
+                "84cdeecf-e68f-42ba-80e4-9505a4d51a21": "d90ec224-6281-4455-b5d1-be356bae78ba",
+                "e3dfbba8-f7da-4cdf-8faa-5dc9b8d01249": "f6110b11-1418-4909-ae4f-7be8eefc04ec"
+              },
+              "hmBasic": {
+                "c89ad704-3fa3-4982-8e44-4dbc6e8251f7": -2147483648,
+                "null": -2147483648,
+                "d113b769-b88a-4050-8d89-b1111a509c40": null
+              },
+              "currentJob": 2,
+              "contacts": 2,
+              "workingNow": false
+            },
+            "city": "d25af0d1-1ec6-427c-856d-eb7156f7c350",
+            "adress": null,
+            "list": [
+              "java.util.ArrayList",
+              [
+                "f58d5115-24c9-497b-bbfe-951c0f60c25e",
+                "a9879d02-a67b-43b6-b13a-26aacc827963",
+                "912cb277-e4ca-4f04-95a3-2df18b291f5d"
+              ]
+            ]
+          },
+          "57f3165c-5fd5-4ca5-b072-25e1015b79fb": 0,
+          "683264ee-1051-4505-b0d7-65354039bec1": 2
+        },
+        "colWorker": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "worker": 3
+      },
+      0,
+      0
+    ],
+    "adressAl": [
+      1,
+      0,
+      0
+    ],
+    "adress": 2,
+    "hmAdresses": {
+      "null": 1,
+      "465a7b34-3ec8-4eb1-90c3-88f157c06b6d": 1,
+      "921a1426-34ce-4245-b0ae-44e136e0c16b": 2
+    },
+    "hmAdress": {
+      "fc5c25bc-1aac-434e-996b-5275cfefa7c1": 2,
+      "f6083b92-120f-4b72-9920-ece697651856": 0,
+      "fc0528ea-2b71-4cea-9011-a95e3199057b": 1
+    },
+    "hmAnotherAdress": {
+      "fb45ff7b-101e-4c67-bb8e-8d569e7248bb": "4242a3f8-c501-49ad-acca-a334129a5f8a",
+      "56d18c52-294f-4f6b-a9a1-a71dc4ea5ea0": "8a118a81-aefd-46a3-b755-0525305f222d",
+      "73fc1d77-7032-45cc-8c05-1281e87c9e20": "46ccd383-cb40-4b42-a0ca-b9413ee65afa"
+    },
+    "hmBasic": {
+      "91e69359-4854-4ef4-b04a-b8a36bc84a59": -2147483648,
+      "157612a5-88e8-46a0-9172-4171a13b0fb0": -2147483648,
+      "5b19b60a-f1e5-45ac-8dd6-97dbf326dbe9": null
+    },
+    "currentJob": 1,
+    "contacts": 2,
+    "workingNow": false
+  }
+}
