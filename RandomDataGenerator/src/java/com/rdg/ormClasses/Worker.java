@@ -18,15 +18,15 @@ public class Worker implements Serializable {
 
     private static final long serialVersionUID = -6785275562696986506L;
     private BigInteger id;
-    private Integer yearsOfExpirenceTotal;
+    private Integer yearsOfExperienceTotal;
     private int age;
     private String firstName;
     private String lastName;
     private boolean isWorkingNow;
     private Gender gender;
     private Gender1 gender1;
-    private double solary;
-    private Double solary1;
+    private double salary;
+    private Double salary1;
     private float hourPrice;
     private Float hourPrice1;
     private short streetNumber;
@@ -40,11 +40,11 @@ public class Worker implements Serializable {
     private Character middleName1;
     private Date birthDate;
     private ArrayList<Job> jobAl;
-    private ArrayList<Adress> adressAl;
-    private Adress adress;
-    private HashMap<String, Adress> hmAdresses;
-    private HashMap<String, Adress> hmAdress;
-    private HashMap<String, String> hmAnotherAdress;
+    private ArrayList<Address> addressAl;
+    private Address address;
+    private HashMap<String, Address> hmAddresses;
+    private HashMap<String, Address> hmAddress;
+    private HashMap<String, String> hmAnotherAddress;
     private HashMap<String, Integer> hmBasic;
     private Job currentJob;
     private Contacts contacts;
@@ -52,17 +52,17 @@ public class Worker implements Serializable {
     public Worker() {
     }
 
-    public Worker(BigInteger id, Integer yearsOfExpirenceTotal, int age, String firstName, String lastName, boolean isWorkingNow, Gender gender, Gender1 gender1, double solary, Double solary1, float hourPrice, Float hourPrice1, short streetNumber, Short streetNumber1, long height, Long height1, BigInteger workingHours, BigDecimal workingHours1, byte streetNumber2, char middleName, Character middleName1, Date birthDate, ArrayList<Job> jobAl, ArrayList<Adress> adressAl, Adress adress, HashMap<String, Adress> hmAdresses, HashMap<String, Adress> hmAdress, HashMap<String, String> hmAnotherAdress, HashMap<String, Integer> hmBasic, Job currentJob, Contacts contacts) {
+    public Worker(BigInteger id, Integer yearsOfExperienceTotal, int age, String firstName, String lastName, boolean isWorkingNow, Gender gender, Gender1 gender1, double salary, Double salary1, float hourPrice, Float hourPrice1, short streetNumber, Short streetNumber1, long height, Long height1, BigInteger workingHours, BigDecimal workingHours1, byte streetNumber2, char middleName, Character middleName1, Date birthDate, ArrayList<Job> jobAl, ArrayList<Address> addressAl, Address address, HashMap<String, Address> hmAddresses, HashMap<String, Address> hmAddress, HashMap<String, String> hmAnotherAddress, HashMap<String, Integer> hmBasic, Job currentJob, Contacts contacts) {
         this.id = id;
-        this.yearsOfExpirenceTotal = yearsOfExpirenceTotal;
+        this.yearsOfExperienceTotal = yearsOfExperienceTotal;
         this.age = age;
         this.firstName = firstName;
         this.lastName = lastName;
         this.isWorkingNow = isWorkingNow;
         this.gender = gender;
         this.gender1 = gender1;
-        this.solary = solary;
-        this.solary1 = solary1;
+        this.salary1 = salary;
+        this.salary1 = salary1;
         this.hourPrice = hourPrice;
         this.hourPrice1 = hourPrice1;
         this.streetNumber = streetNumber;
@@ -76,11 +76,11 @@ public class Worker implements Serializable {
         this.middleName1 = middleName1;
         this.birthDate = birthDate;
         this.jobAl = jobAl;
-        this.adressAl = adressAl;
-        this.adress = adress;
-        this.hmAdresses = hmAdresses;
-        this.hmAdress = hmAdress;
-        this.hmAnotherAdress = hmAnotherAdress;
+        this.addressAl = addressAl;
+        this.address = address;
+        this.hmAddresses = hmAddresses;
+        this.hmAddress = hmAddress;
+        this.hmAnotherAddress = hmAnotherAddress;
         this.hmBasic = hmBasic;
         this.currentJob = currentJob;
         this.contacts = contacts;
@@ -94,12 +94,12 @@ public class Worker implements Serializable {
         this.id = id;
     }
 
-    public Integer getYearsOfExpirenceTotal() {
-        return yearsOfExpirenceTotal;
+    public Integer getYearsOfExperienceTotal() {
+        return yearsOfExperienceTotal;
     }
 
-    public void setYearsOfExpirenceTotal(Integer yearsOfExpirenceTotal) {
-        this.yearsOfExpirenceTotal = yearsOfExpirenceTotal;
+    public void setYearsOfExperienceTotal(Integer yearsOfExperienceTotal) {
+        this.yearsOfExperienceTotal = yearsOfExperienceTotal;
     }
 
     public int getAge() {
@@ -150,20 +150,20 @@ public class Worker implements Serializable {
         this.gender1 = gender1;
     }
 
-    public double getSolary() {
-        return solary;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setSolary(double solary) {
-        this.solary = solary;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
-    public Double getSolary1() {
-        return solary1;
+    public Double getSalary1() {
+        return salary1;
     }
 
-    public void setSolary1(Double solary1) {
-        this.solary1 = solary1;
+    public void setSalary1(Double salary1) {
+        this.salary1 = salary1;
     }
 
     public float getHourPrice() {
@@ -270,44 +270,44 @@ public class Worker implements Serializable {
         this.jobAl = jobAl;
     }
 
-    public ArrayList<Adress> getAdressAl() {
-        return adressAl;
+    public ArrayList<Address> getAddressAl() {
+        return addressAl;
     }
 
-    public void setAdressAl(ArrayList<Adress> adressAl) {
-        this.adressAl = adressAl;
+    public void setAddressAl(ArrayList<Address> addressAl) {
+        this.addressAl = addressAl;
     }
 
-    public Adress getAdress() {
-        return adress;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setAdress(Adress adress) {
-        this.adress = adress;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
-    public HashMap<String, Adress> getHmAdresses() {
-        return hmAdresses;
+    public HashMap<String, Address> getHmAddresses() {
+        return hmAddresses;
     }
 
-    public void setHmAdresses(HashMap<String, Adress> hmAdresses) {
-        this.hmAdresses = hmAdresses;
+    public void setHmAddresses(HashMap<String, Address> hmAddresses) {
+        this.hmAddresses = hmAddresses;
     }
 
-    public HashMap<String, Adress> getHmAdress() {
-        return hmAdress;
+    public HashMap<String, Address> getHmAddress() {
+        return hmAddress;
     }
 
-    public void setHmAdress(HashMap<String, Adress> hmAdress) {
-        this.hmAdress = hmAdress;
+    public void setHmAddress(HashMap<String, Address> hmAddress) {
+        this.hmAddress = hmAddress;
     }
 
-    public HashMap<String, String> getHmAnotherAdress() {
-        return hmAnotherAdress;
+    public HashMap<String, String> getHmAnotherAddress() {
+        return hmAnotherAddress;
     }
 
-    public void setHmAnotherAdress(HashMap<String, String> hmAnotherAdress) {
-        this.hmAnotherAdress = hmAnotherAdress;
+    public void setHmAnotherAddress(HashMap<String, String> hmAnotherAddress) {
+        this.hmAnotherAddress = hmAnotherAddress;
     }
 
     public HashMap<String, Integer> getHmBasic() {
@@ -341,19 +341,19 @@ public class Worker implements Serializable {
         Worker worker = (Worker) o;
         return age == worker.age &&
                 isWorkingNow == worker.isWorkingNow &&
-                Double.compare(worker.solary, solary) == 0 &&
+                Double.compare(worker.salary, salary) == 0 &&
                 Float.compare(worker.hourPrice, hourPrice) == 0 &&
                 streetNumber == worker.streetNumber &&
                 height == worker.height &&
                 streetNumber2 == worker.streetNumber2 &&
                 middleName == worker.middleName &&
                 Objects.equal(id, worker.id) &&
-                Objects.equal(yearsOfExpirenceTotal, worker.yearsOfExpirenceTotal) &&
+                Objects.equal(yearsOfExperienceTotal, worker.yearsOfExperienceTotal) &&
                 Objects.equal(firstName, worker.firstName) &&
                 Objects.equal(lastName, worker.lastName) &&
                 gender == worker.gender &&
                 gender1 == worker.gender1 &&
-                Objects.equal(solary1, worker.solary1) &&
+                Objects.equal(salary1, worker.salary1) &&
                 Objects.equal(hourPrice1, worker.hourPrice1) &&
                 Objects.equal(streetNumber1, worker.streetNumber1) &&
                 Objects.equal(height1, worker.height1) &&
@@ -362,11 +362,11 @@ public class Worker implements Serializable {
                 Objects.equal(middleName1, worker.middleName1) &&
                 Objects.equal(birthDate, worker.birthDate) &&
                 Objects.equal(jobAl, worker.jobAl) &&
-                Objects.equal(adressAl, worker.adressAl) &&
-                Objects.equal(adress, worker.adress) &&
-                Objects.equal(hmAdresses, worker.hmAdresses) &&
-                Objects.equal(hmAdress, worker.hmAdress) &&
-                Objects.equal(hmAnotherAdress, worker.hmAnotherAdress) &&
+                Objects.equal(addressAl, worker.addressAl) &&
+                Objects.equal(address, worker.address) &&
+                Objects.equal(hmAddresses, worker.hmAddresses) &&
+                Objects.equal(hmAddress, worker.hmAddress) &&
+                Objects.equal(hmAnotherAddress, worker.hmAnotherAddress) &&
                 Objects.equal(hmBasic, worker.hmBasic) &&
                 Objects.equal(currentJob, worker.currentJob) &&
                 Objects.equal(contacts, worker.contacts);
@@ -374,22 +374,22 @@ public class Worker implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(id, yearsOfExpirenceTotal, age, firstName, lastName, isWorkingNow, gender, gender1, solary, solary1, hourPrice, hourPrice1, streetNumber, streetNumber1, height, height1, workingHours, workingHours1, streetNumber2, middleName, middleName1, birthDate, jobAl, adressAl, adress, hmAdresses, hmAdress, hmAnotherAdress, hmBasic, currentJob, contacts);
+        return Objects.hashCode(id, yearsOfExperienceTotal, age, firstName, lastName, isWorkingNow, gender, gender1, salary, salary1, hourPrice, hourPrice1, streetNumber, streetNumber1, height, height1, workingHours, workingHours1, streetNumber2, middleName, middleName1, birthDate, jobAl, addressAl, address, hmAddresses, hmAddress, hmAnotherAddress, hmBasic, currentJob, contacts);
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Worker{");
         sb.append("id=").append(id);
-        sb.append(", yearsOfExpirenceTotal=").append(yearsOfExpirenceTotal);
+        sb.append(", yearsOfExperienceTotal=").append(yearsOfExperienceTotal);
         sb.append(", age=").append(age);
         sb.append(", firstName='").append(firstName).append('\'');
         sb.append(", lastName='").append(lastName).append('\'');
         sb.append(", isWorkingNow=").append(isWorkingNow);
         sb.append(", gender=").append(gender);
         sb.append(", gender1=").append(gender1);
-        sb.append(", solary=").append(solary);
-        sb.append(", solary1=").append(solary1);
+        sb.append(", salary=").append(salary);
+        sb.append(", salary1=").append(salary1);
         sb.append(", hourPrice=").append(hourPrice);
         sb.append(", hourPrice1=").append(hourPrice1);
         sb.append(", streetNumber=").append(streetNumber);
@@ -403,11 +403,11 @@ public class Worker implements Serializable {
         sb.append(", middleName1=").append(middleName1);
         sb.append(", birthDate=").append(birthDate);
         sb.append(", jobAl=").append(jobAl);
-        sb.append(", adressAl=").append(adressAl);
-        sb.append(", adress=").append(adress);
-        sb.append(", hmAdresses=").append(hmAdresses);
-        sb.append(", hmAdress=").append(hmAdress);
-        sb.append(", hmAnotherAdress=").append(hmAnotherAdress);
+        sb.append(", addressAl=").append(addressAl);
+        sb.append(", address=").append(address);
+        sb.append(", hmAddresses=").append(hmAddresses);
+        sb.append(", hmAddress=").append(hmAddress);
+        sb.append(", hmAnotherAddress=").append(hmAnotherAddress);
         sb.append(", hmBasic=").append(hmBasic);
         sb.append(", currentJob=").append(currentJob);
         sb.append(", contacts=").append(contacts);

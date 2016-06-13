@@ -37,7 +37,7 @@ import java.util.ArrayList;
 public class ExportXLS {
 
     final static Logger logger = Logger.getLogger(ExportXLS.class);
-    private static String FILE_NAME_XSL = "RandomDataGenerator/xls_xlsx/test.xlsx";
+    private static final String FILE_NAME_XSL = "RandomDataGenerator/xls_xlsx/test.xlsx";
     private static XSSFWorkbook workbook = new XSSFWorkbook();
     private static XSSFCell cell;
     private static XSSFRow row;

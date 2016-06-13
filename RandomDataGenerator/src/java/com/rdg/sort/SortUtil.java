@@ -32,7 +32,7 @@ public class SortUtil {
     }
 
     /**
-     * sorting data with Collestion.sort() method
+     * sorting data with Collection.sort() method
      *
      * @param al
      * @return al

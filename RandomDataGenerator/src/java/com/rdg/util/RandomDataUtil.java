@@ -37,8 +37,8 @@ public class RandomDataUtil {
     private static HashMap<String, ArrayList<Object>> hmFilledClasses = new HashMap<>();
     private static HashMap<Integer, HashSet<String>> hmClassesPerDeepLevel = new HashMap<>();
     private static HashSet<String> hsOrmClassesForFill = new HashSet<>();
-    private static int numberOfData = Const.DEAFULT_NUMBER_OF_DATA;
-    private static int numberOfDataForOneToManyRelation = Const.DEAFULT_NUMBER_OF_DATA_FOR_ONE_TO_MANY_RELATION;
+    private static int numberOfData = Const.DEFAULT_NUMBER_OF_DATA;
+    private static int numberOfDataForOneToManyRelation = Const.DEFAULT_NUMBER_OF_DATA_FOR_ONE_TO_MANY_RELATION;
     private static int deepLevel = Const.TWO;
     private static HashMap<String, Boundary> hmBoundary = new HashMap<>();
     private static boolean bAllowNulls = Boolean.TRUE;
@@ -193,11 +193,11 @@ public class RandomDataUtil {
      */
     private static void findOutBoundaries() {
         HashMap<String, String> hmTemp = BoundaryManager.getAllBoundaries();
-        Iterator<Map.Entry<String, String>> itrator = hmTemp.entrySet().iterator();
+        Iterator<Map.Entry<String, String>> iterator = hmTemp.entrySet().iterator();
         Boundary boundary;
         String sKey;
-        while (itrator.hasNext()) {
-            Map.Entry<String, String> entry = itrator.next();
+        while (iterator.hasNext()) {
+            Map.Entry<String, String> entry = iterator.next();
             sKey = entry.getKey().substring(Const.ZERO, entry.getKey().lastIndexOf(Const.DOT_DELIMITER));
             if (getHmBoundary().containsKey(sKey)) {
                 boundary = getHmBoundary().get(sKey);
@@ -205,26 +205,26 @@ public class RandomDataUtil {
                 boundary = new Boundary();
                 getHmBoundary().put(sKey, boundary);
             }
-            String[] sClassPropertySplited = entry.getKey().split(RegularExpUtil.MATCH_DOT);
-            String sClassName = sClassPropertySplited[Const.ZERO];
-            String sClassProperty = sClassPropertySplited[Const.ONE];
+            String[] sClassPropertySplitted = entry.getKey().split(RegularExpUtil.MATCH_DOT);
+            String sClassName = sClassPropertySplitted[Const.ZERO];
+            String sClassProperty = sClassPropertySplitted[Const.ONE];
             String sPropertyValues = entry.getValue();
             String sReturnType = getReturnParamFromMethod(sClassName, sClassProperty).getName();
-            String sLast = sClassPropertySplited[sClassPropertySplited.length - Const.ONE];
+            String sLast = sClassPropertySplitted[sClassPropertySplitted.length - Const.ONE];
             switch (sLast) {
-                case Const.SUFIX_MIN:
+                case Const.SUFFIX_MIN:
                     boundary.setObjMin(getDinamiclyCastWithValue(sReturnType, checkMinimumMaximumLimitForClass(sReturnType, sPropertyValues.trim())));
                     break;
-                case Const.SUFIX_MAX:
+                case Const.SUFFIX_MAX:
                     boundary.setObjMax(getDinamiclyCastWithValue(sReturnType, checkMinimumMaximumLimitForClass(sReturnType, sPropertyValues.trim())));
                     break;
                 case Const.ALLOW_NULLS:
                     boundary.setbAllowNulls(Boolean.valueOf(Boolean.valueOf(sPropertyValues.trim().toString()).booleanValue()));
                     break;
-                case Const.SUFIX_PRECISION:
+                case Const.SUFFIX_PRECISION:
                     boundary.setObjPrecision(getDinamiclyCastWithValue(int.class.getName(), checkMinimumMaximumLimitForClass(sReturnType, sPropertyValues.trim())));
                     break;
-                case Const.SUFIX_ENUM:
+                case Const.SUFFIX_ENUM:
                     boundary.setObjEnum((String[]) getDinamiclyCastWithValue(sReturnType, checkMinimumMaximumLimitForClass(sReturnType, sPropertyValues.trim())));
                     break;
             }
@@ -868,9 +868,9 @@ public class RandomDataUtil {
         try {
             method.invoke(obj, objectArgs);
         } catch (IllegalArgumentException e) {
-            logger.error(InternationalizationManager.getString(Const.ILLEGAL_ACESS_EXEPTION_IN_METHOD) + " invokeMethodOnObject(Object obj, Method method, Object objectArgs) ", e);
+            logger.error(InternationalizationManager.getString(Const.ILLEGAL_ACCESS_EXCEPTION_IN_METHOD) + " invokeMethodOnObject(Object obj, Method method, Object objectArgs) ", e);
         } catch (IllegalAccessException | InvocationTargetException e) {
-            logger.error(InternationalizationManager.getString(Const.ILLEGAL_ACESS_EXEPTION_IN_METHOD) + "invokeMethodOnObject(Object obj, Method method, Object objectArgs) ", e);
+            logger.error(InternationalizationManager.getString(Const.ILLEGAL_ACCESS_EXCEPTION_IN_METHOD) + "invokeMethodOnObject(Object obj, Method method, Object objectArgs) ", e);
         }
     }
 

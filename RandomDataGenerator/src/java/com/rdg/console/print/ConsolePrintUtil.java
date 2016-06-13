@@ -32,8 +32,8 @@ import java.util.ArrayList;
 
 public class ConsolePrintUtil {
     private final static Logger logger = Logger.getLogger(ConsolePrintUtil.class);
+    private static final SimpleDateFormat sdf = new SimpleDateFormat(DateUtil.sDateFormat);
     public static StringBuilder stringBuilder = new StringBuilder();
-    private static SimpleDateFormat sdf = new SimpleDateFormat(DateUtil.sDateFormat);
 
     /**
      * printing in console array list of range number filter data
@@ -47,7 +47,8 @@ public class ConsolePrintUtil {
             stringBuilder.append(rangeNumberFilter.getProperty());
             stringBuilder.append(Const.NEW_LINE);
             stringBuilder.append(InternationalizationManager.getString(Const.RANGE_NUMBER_FILTER_FROM));
-            stringBuilder.append(rangeNumberFilter.getRangeFrom() + Const.NEW_LINE);
+            stringBuilder.append(rangeNumberFilter.getRangeFrom());
+            stringBuilder.append(Const.NEW_LINE);
             stringBuilder.append(InternationalizationManager.getString(Const.RANGE_NUMBER_FILTER_TO));
             stringBuilder.append(rangeNumberFilter.getRangeTo());
             stringBuilder.append(Const.NEW_LINE);
@@ -184,6 +185,7 @@ public class ConsolePrintUtil {
             sbInfo.append(alData.size());
             sbInfo.append(Const.SPACE);
             sbInfo.append(InternationalizationManager.getString(Const.FROM));
+            sbInfo.append(Const.SPACE);
             sbInfo.append(RandomDataUtil.getNumberOfData());
             sbInfo.append(Const.NEW_LINE);
             sbInfo.append(Const.HASH_ARRAY);

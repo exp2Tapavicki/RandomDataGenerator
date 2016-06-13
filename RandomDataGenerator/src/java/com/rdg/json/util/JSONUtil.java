@@ -31,11 +31,11 @@ import java.io.IOException;
 
 public class JSONUtil {
 
-    private final static Logger logger = Logger.getLogger(JSONUtil.class);
-    public static ObjectMapper objectMapper = new ObjectMapper()
+    public static final ObjectMapper objectMapper = new ObjectMapper()
             .configure(SerializationFeature.WRAP_ROOT_VALUE, Boolean.TRUE)
             .configure(DeserializationFeature.UNWRAP_ROOT_VALUE, Boolean.TRUE)
             .configure(SerializationFeature.WRITE_NULL_MAP_VALUES, Boolean.TRUE);
+    private final static Logger logger = Logger.getLogger(JSONUtil.class);
     private static String FILE_NAME = "RandomDataGenerator/json/test";
 
     /**

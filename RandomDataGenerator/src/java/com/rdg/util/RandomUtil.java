@@ -663,6 +663,9 @@ public class RandomUtil {
      * @return String or null
      */
     public static String getRandomNames(int name, boolean bAllowNulls) {
+        if (bAllowNulls && getRandomValueOrNull()) {
+            return null;
+        }
         String sFirstName = alOfFirstNames[RandomUtil.getRandomPrimitiveInt(Const.ZERO, alOfFirstNames.length - Const.ONE)];
         String sLastName = alOfLastNames[RandomUtil.getRandomPrimitiveInt(Const.ZERO, alOfLastNames.length - Const.ONE)];
         char sMiddleName = RandomUtil.getRandomChar(Const.CHAR_A, Const.CHAR_Z);

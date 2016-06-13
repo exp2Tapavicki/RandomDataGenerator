@@ -8,29 +8,29 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.List;
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id", scope = Adress.class)
-public class Adress implements Serializable {
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id", scope = Address.class)
+public class Address implements Serializable {
 
     private static final long serialVersionUID = 5000464942107728646L;
     private BigInteger id;
     private Worker worker;
     private String city;
-    private String adress;
+    private String address;
     private List<String> list;
-    private AnotherAdress anotherAdress;
+    private AnotherAddress anotherAddress;
     private short streetNumber;
     private byte streetNumber2;
 
-    public Adress() {
+    public Address() {
     }
 
-    public Adress(BigInteger id, Worker worker, String city, String adress, List<String> list, AnotherAdress anotherAdress, short streetNumber, byte streetNumber2) {
+    public Address(BigInteger id, Worker worker, String city, String address, List<String> list, AnotherAddress anotherAddress, short streetNumber, byte streetNumber2) {
         this.id = id;
         this.worker = worker;
         this.city = city;
-        this.adress = adress;
+        this.address = address;
         this.list = list;
-        this.anotherAdress = anotherAdress;
+        this.anotherAddress = anotherAddress;
         this.streetNumber = streetNumber;
         this.streetNumber2 = streetNumber2;
     }
@@ -59,12 +59,12 @@ public class Adress implements Serializable {
         this.city = city;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public List<String> getList() {
@@ -75,12 +75,12 @@ public class Adress implements Serializable {
         this.list = list;
     }
 
-    public AnotherAdress getAnotherAdress() {
-        return anotherAdress;
+    public AnotherAddress getAnotherAddress() {
+        return anotherAddress;
     }
 
-    public void setAnotherAdress(AnotherAdress anotherAdress) {
-        this.anotherAdress = anotherAdress;
+    public void setAnotherAddress(AnotherAddress anotherAddress) {
+        this.anotherAddress = anotherAddress;
     }
 
     public short getStreetNumber() {
@@ -102,21 +102,21 @@ public class Adress implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Adress)) return false;
-        Adress adress1 = (Adress) o;
-        return streetNumber == adress1.streetNumber &&
-                streetNumber2 == adress1.streetNumber2 &&
-                Objects.equal(id, adress1.id) &&
-                Objects.equal(worker, adress1.worker) &&
-                Objects.equal(city, adress1.city) &&
-                Objects.equal(adress, adress1.adress) &&
-                Objects.equal(list, adress1.list) &&
-                Objects.equal(anotherAdress, adress1.anotherAdress);
+        if (!(o instanceof Address)) return false;
+        Address address1 = (Address) o;
+        return streetNumber == address1.streetNumber &&
+                streetNumber2 == address1.streetNumber2 &&
+                Objects.equal(id, address1.id) &&
+                Objects.equal(worker, address1.worker) &&
+                Objects.equal(city, address1.city) &&
+                Objects.equal(address, address1.address) &&
+                Objects.equal(list, address1.list) &&
+                Objects.equal(anotherAddress, address1.anotherAddress);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(id, city, adress, list, anotherAdress, streetNumber, streetNumber2);
+        return Objects.hashCode(id, city, address, list, anotherAddress, streetNumber, streetNumber2);
     }
 
     @Override
@@ -124,9 +124,9 @@ public class Adress implements Serializable {
         final StringBuilder sb = new StringBuilder("Adress{");
         sb.append("id=").append(id);
         sb.append(", city='").append(city).append('\'');
-        sb.append(", adress='").append(adress).append('\'');
+        sb.append(", address='").append(address).append('\'');
         sb.append(", list=").append(list);
-        sb.append(", anotherAdress=").append(anotherAdress);
+        sb.append(", anotherAddress=").append(anotherAddress);
         sb.append(", streetNumber=").append(streetNumber);
         sb.append(", streetNumber2=").append(streetNumber2);
         sb.append('}');

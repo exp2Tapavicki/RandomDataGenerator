@@ -15,17 +15,17 @@ public class Contacts implements Serializable {
     private BigInteger id;
     private Worker worker;
     private String city;
-    private String adress;
+    private String address;
     private List<String> list;
 
     public Contacts() {
     }
 
-    public Contacts(BigInteger id, Worker worker, String city, String adress, List<String> list) {
+    public Contacts(BigInteger id, Worker worker, String city, String address, List<String> list) {
         this.id = id;
         this.worker = worker;
         this.city = city;
-        this.adress = adress;
+        this.address = address;
         this.list = list;
     }
 
@@ -53,12 +53,12 @@ public class Contacts implements Serializable {
         this.city = city;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public List<String> getList() {
@@ -77,13 +77,13 @@ public class Contacts implements Serializable {
         return Objects.equal(id, contacts.id) &&
                 Objects.equal(worker, contacts.worker) &&
                 Objects.equal(city, contacts.city) &&
-                Objects.equal(adress, contacts.adress) &&
+                Objects.equal(address, contacts.address) &&
                 Objects.equal(list, contacts.list);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(id, city, adress, list);
+        return Objects.hashCode(id, city, address, list);
     }
 
     @Override
@@ -91,7 +91,7 @@ public class Contacts implements Serializable {
         final StringBuilder sb = new StringBuilder("Contacts{");
         sb.append("id=").append(id);
         sb.append(", city='").append(city).append('\'');
-        sb.append(", adress='").append(adress).append('\'');
+        sb.append(", address='").append(address).append('\'');
         sb.append(", list=").append(list);
         sb.append('}');
         return sb.toString();

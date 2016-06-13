@@ -42,7 +42,7 @@ public class RandomDataGenerator {
         initializeBase();
 
         TestDataUtil.printAndTestResultOneFilter();
-        TestDataUtil.printAndTestResultMoreFillters();
+        TestDataUtil.printAndTestResultMoreFilters();
         TestDataUtil.printAndTestResultSortOrder();
         TestDataUtil.exportObjectsToXML();
         TestDataUtil.XMLToObject();
@@ -61,7 +61,7 @@ public class RandomDataGenerator {
      *
      * @throws Exception
      */
-    private static void initializeLogging() throws Exception {
+    private static void initializeLogging() {
         URL url = RandomDataGenerator.class.getResource("/rdg/log4j.properties");
         Properties properties = new Properties();
         try {

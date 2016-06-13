@@ -17,6 +17,6 @@ package com.rdg.util;
 */
 
 public class DateUtil {
-    public static String sDateFormat = "yyyy/MM/dd HH:mm:ss";
-    public static String sDateFormat_1 = "m/d/yy h:mm";
+    public static final String sDateFormat = "yyyy/MM/dd HH:mm:ss";
+    public static final String sDateFormat_1 = "m/d/yy h:mm";
 }

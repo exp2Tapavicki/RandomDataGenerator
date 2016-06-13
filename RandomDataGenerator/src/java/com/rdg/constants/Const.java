@@ -21,8 +21,8 @@ import java.math.BigInteger;
 
 public class Const {
     public static final int FILL_HASH_DATA = -1;
-    public static final int DEAFULT_NUMBER_OF_DATA = 50;
-    public static final int DEAFULT_NUMBER_OF_DATA_FOR_ONE_TO_MANY_RELATION = 10;
+    public static final int DEFAULT_NUMBER_OF_DATA = 50;
+    public static final int DEFAULT_NUMBER_OF_DATA_FOR_ONE_TO_MANY_RELATION = 10;
     public static final int ZERO = 0;
     public static final int ONE = 1;
     public static final int TWO = 2;
@@ -63,11 +63,11 @@ public class Const {
 
     public static final String DOT_DELIMITER = ".";
     public static final String COMMA_DELIMITER = ",";
-    public static final String SUFIX_MIN = "min";
-    public static final String SUFIX_MAX = "max";
-    public static final String SUFIX_ALLOW_NULLS = "allow_nulls";
-    public static final String SUFIX_PRECISION = "precision";
-    public static final String SUFIX_ENUM = "enum";
+    public static final String SUFFIX_MIN = "min";
+    public static final String SUFFIX_MAX = "max";
+    public static final String SUFFIX_ALLOW_NULLS = "allow_nulls";
+    public static final String SUFFIX_PRECISION = "precision";
+    public static final String SUFFIX_ENUM = "enum";
 
     public static final Integer ZERO_INTEGER = 0;
     public static final Integer ONE_INTEGER = 1;
@@ -102,7 +102,7 @@ public class Const {
     public static final String COULD_NOT_INSTANCE_CLASS = "COULD_NOT_INSTANCE_CLASS";
     public static final String CLASS_NOT_EXIST = "CLASS_NOT_EXIST";
     public static final String IN_METHOD = "IN_METHOD";
-    public static final String ILLEGAL_ACESS_EXEPTION_IN_METHOD = "ILLEGAL_ACESS_EXEPTION_IN_METHOD";
+    public static final String ILLEGAL_ACCESS_EXCEPTION_IN_METHOD = "ILLEGAL_ACCESS_EXCEPTION_IN_METHOD";
     public static final String RANGE_NUMBER_FILTER_FOR_PROPERTY = "RANGE_NUMBER_FILTER_FOR_PROPERTY";
     public static final String RANGE_NUMBER_FILTER_FROM = "RANGE_NUMBER_FILTER_FROM";
     public static final String RANGE_NUMBER_FILTER_TO = "RANGE_NUMBER_FILTER_TO";

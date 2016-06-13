@@ -8,25 +8,25 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.List;
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id", scope = AnotherAdress2.class)
-public class AnotherAdress2 implements Serializable {
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id", scope = AnotherAddress2.class)
+public class AnotherAddress2 implements Serializable {
 
 
     private static final long serialVersionUID = 1940555154842485609L;
     private BigInteger id;
     private Worker worker;
     private String city;
-    private String adress;
+    private String address;
     private List<String> list;
 
-    public AnotherAdress2() {
+    public AnotherAddress2() {
     }
 
-    public AnotherAdress2(BigInteger id, Worker worker, String city, String adress, List<String> list) {
+    public AnotherAddress2(BigInteger id, Worker worker, String city, String address, List<String> list) {
         this.id = id;
         this.worker = worker;
         this.city = city;
-        this.adress = adress;
+        this.address = address;
         this.list = list;
     }
 
@@ -54,12 +54,12 @@ public class AnotherAdress2 implements Serializable {
         this.city = city;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public List<String> getList() {
@@ -73,27 +73,27 @@ public class AnotherAdress2 implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof AnotherAdress2)) return false;
-        AnotherAdress2 that = (AnotherAdress2) o;
+        if (!(o instanceof AnotherAddress2)) return false;
+        AnotherAddress2 that = (AnotherAddress2) o;
         return Objects.equal(id, that.id) &&
                 Objects.equal(worker, that.worker) &&
                 Objects.equal(city, that.city) &&
-                Objects.equal(adress, that.adress) &&
+                Objects.equal(address, that.address) &&
                 Objects.equal(list, that.list);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(id, worker, city, adress, list);
+        return Objects.hashCode(id, worker, city, address, list);
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("AnotherAdress2{");
+        final StringBuilder sb = new StringBuilder("AnotherAddress2{");
         sb.append("id=").append(id);
         sb.append(", worker=").append(worker);
         sb.append(", city='").append(city).append('\'');
-        sb.append(", adress='").append(adress).append('\'');
+        sb.append(", address='").append(address).append('\'');
         sb.append(", list=").append(list);
         sb.append('}');
         return sb.toString();

@@ -51,7 +51,7 @@ public class TestDataUtil {
         RandomDataUtil.setsClassName(Worker.class.getName());
         ArrayList<Object> alData;
         alData = RandomDataUtil.getFilledData();
-        RangeNumberFilter rangeNumberFilter = RandomDataUtil.getRandomRangeNumberFilter(Worker.class.getSimpleName(), "yearsOfExpirenceTotal");
+        RangeNumberFilter rangeNumberFilter = RandomDataUtil.getRandomRangeNumberFilter(Worker.class.getSimpleName(), "yearsOfExperienceTotal");
         ConsolePrintUtil.printData(alData);
         alData = FilterUtil.filterRangeDataNumbers(alData, rangeNumberFilter);
         ConsolePrintUtil.printData(alData);
@@ -62,7 +62,7 @@ public class TestDataUtil {
     /**
      * creating two range number filter, test data, filtering  and printing in console
      */
-    public static void printAndTestResultMoreFillters() {
+    public static void printAndTestResultMoreFilters() {
         TimeCounter timeCounter = new TimeCounter();
         RandomDataUtil.setDeepLevel(3);
         RandomDataUtil.setNumberOfData(10);
@@ -72,7 +72,7 @@ public class TestDataUtil {
         RandomDataUtil.setsPackageFromClass(Const.CLASS_PACKAGE);
         RandomDataUtil.setsPackageFromEnum(Const.ENUM_PACKAGE);
         RandomDataUtil.setsClassName(Worker.class.getName());
-        RangeNumberFilter rangeNumberFilter = RandomDataUtil.getRandomRangeNumberFilter(Worker.class.getSimpleName(), "yearsOfExpirenceTotal");
+        RangeNumberFilter rangeNumberFilter = RandomDataUtil.getRandomRangeNumberFilter(Worker.class.getSimpleName(), "yearsOfExperienceTotal");
         RangeNumberFilter rangeNumberFilter2 = new RangeNumberFilter("Worker", "age", RandomUtil.getRandomBoolean(Boolean.FALSE), RandomUtil.getRandomBoolean(Boolean.FALSE), RandomUtil.getRandomLong(Const.ZERO_LONG, Long.MAX_VALUE, Boolean.FALSE), RandomUtil.getRandomLong(Const.ZERO_LONG, Long.MAX_VALUE, Boolean.FALSE));
         ArrayList<RangeNumberFilter> alRangeNumberFilters = new ArrayList();
         alRangeNumberFilters.add(rangeNumberFilter);

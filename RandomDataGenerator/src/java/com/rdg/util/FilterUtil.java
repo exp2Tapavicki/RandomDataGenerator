@@ -28,22 +28,22 @@ public class FilterUtil {
      * satisfy requirement. If filters are not null and value in worker for years of experience is null it should not filter that data and should add them too.
      *
      * @param alWorkers                  ArrayList of Workers with years of experience
-     * @param iYearsOfExpirenceTotalFrom filter for total years lower range filtering
-     * @param iYearsOfExpirenceTotalTo   filter for total years higher range filtering
-     * @param bInRangeTotal              if true it is giving in range filter for iYearsOfExpirenceTotalFrom and iYearsOfExpirenceTotalTo variables else it is telling that they are out of that range
+     * @param iYearsOfExperienceTotalFrom filter for total years lower range filtering
+     * @param iYearsOfExperienceTotalTo   filter for total years higher range filtering
+     * @param bInRangeTotal              if true it is giving in range filter for iYearsOfExperienceTotalFrom and iYearsOfExperienceTotalTo variables else it is telling that they are out of that range
      * @param iAgeFrom                   filter for age from
      * @param iAgeTo                     filter for age to
      * @param bInRangeOrg                if true it is giving in range filter for iAgeFrom and iAgeTo else it is telling that they are out of that range
      * @return alWorkersTemp                filtered ArrayList of workers
      */
-    public static ArrayList<Worker> filterDataByYearsOfExperienceAndAge(ArrayList<Worker> alWorkers, Integer iYearsOfExpirenceTotalFrom, Integer iYearsOfExpirenceTotalTo, boolean bInRangeTotal, Integer iAgeFrom, Integer iAgeTo, boolean bInRangeOrg) {
+    public static ArrayList<Worker> filterDataByYearsOfExperienceAndAge(ArrayList<Worker> alWorkers, Integer iYearsOfExperienceTotalFrom, Integer iYearsOfExperienceTotalTo, boolean bInRangeTotal, Integer iAgeFrom, Integer iAgeTo, boolean bInRangeOrg) {
         ArrayList<Worker> alWorkersTemp = new ArrayList();
         if (alWorkers != null && !alWorkers.isEmpty()) {
             for (Worker worker : alWorkers) {
-                Integer iYearsOfExpirenceTotal = worker.getYearsOfExpirenceTotal();
+                Integer iYearsOfExperienceTotal = worker.getYearsOfExperienceTotal();
                 Integer iAge = worker.getAge();
-                if ((iYearsOfExpirenceTotalFrom == null || (iYearsOfExpirenceTotal == null || (bInRangeTotal ? iYearsOfExpirenceTotal.intValue() >= iYearsOfExpirenceTotalFrom.intValue() : iYearsOfExpirenceTotal.intValue() <= iYearsOfExpirenceTotalFrom.intValue())))) {
-                    if (iYearsOfExpirenceTotalTo == null || (iYearsOfExpirenceTotal == null || (bInRangeTotal ? iYearsOfExpirenceTotal.intValue() <= iYearsOfExpirenceTotalTo.intValue() : iYearsOfExpirenceTotal.intValue() >= iYearsOfExpirenceTotalTo.intValue()))) {
+                if ((iYearsOfExperienceTotalFrom == null || (iYearsOfExperienceTotal == null || (bInRangeTotal ? iYearsOfExperienceTotal.intValue() >= iYearsOfExperienceTotalFrom.intValue() : iYearsOfExperienceTotal.intValue() <= iYearsOfExperienceTotalFrom.intValue())))) {
+                    if (iYearsOfExperienceTotalTo == null || (iYearsOfExperienceTotal == null || (bInRangeTotal ? iYearsOfExperienceTotal.intValue() <= iYearsOfExperienceTotalTo.intValue() : iYearsOfExperienceTotal.intValue() >= iYearsOfExperienceTotalTo.intValue()))) {
                         if (iAgeFrom == null || (iAge == null || (bInRangeOrg ? iAge.intValue() >= iAgeFrom.intValue() : iAge.intValue() <= iAgeFrom.intValue()))) {
                             if (iAgeTo == null || (iAge == null || (bInRangeOrg ? iAge.intValue() <= iAgeTo.intValue() : iAge.intValue() >= iAgeTo.intValue()))) {
                                 alWorkersTemp.add(worker);
