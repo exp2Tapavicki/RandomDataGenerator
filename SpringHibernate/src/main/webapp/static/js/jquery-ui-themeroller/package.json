@@ -1,0 +1,64 @@
+{
+  "_from": "jquery-ui-themeroller",
+  "_id": "jquery-ui-themeroller@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-/FhVN19HzrT4bn3ObCCDGwnkfUA=",
+  "_location": "/jquery-ui-themeroller",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jquery-ui-themeroller",
+    "name": "jquery-ui-themeroller",
+    "escapedName": "jquery-ui-themeroller",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-ui-themeroller/-/jquery-ui-themeroller-0.0.4.tgz",
+  "_shasum": "fc5855375f47ceb4f86e7dce6c20831b09e47d40",
+  "_spec": "jquery-ui-themeroller",
+  "_where": "/home/exp2radislav",
+  "author": {
+    "name": "Rafael Xavier de Souza",
+    "email": "rxaviers@gmail.com",
+    "url": "http://rafael.xavier.blog.br"
+  },
+  "bugs": {
+    "url": "https://github.com/rxaviers/jquery-ui-themeroller/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "0.9.0",
+    "gm": "1.8.1",
+    "semver": "1.1.0"
+  },
+  "deprecated": false,
+  "description": "Use `jquery-ui-themeroller` to generate the CSS of your jQuery UI theme.",
+  "devDependencies": {
+    "chai": "1.10.x",
+    "jshint": "2.6.x",
+    "mocha": "2.1.0"
+  },
+  "homepage": "https://github.com/rxaviers/jquery-ui-themeroller#readme",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/rxaviers/jquery-ui-themeroller/blob/master/LICENSE.txt"
+    }
+  ],
+  "main": "lib/themeroller.js",
+  "name": "jquery-ui-themeroller",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rxaviers/jquery-ui-themeroller.git"
+  },
+  "scripts": {
+    "test": "jshint lib/*.js test/*.js && mocha"
+  },
+  "version": "0.0.4"
+}
