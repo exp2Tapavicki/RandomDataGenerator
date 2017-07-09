@@ -38,23 +38,23 @@ Download and setup Apache Tomcat within workspace IDE. Import project as Maven P
 # Web Application
 
 * Login page
-![](images/login.png)
+![](SpringHibernate/images/login.png)
 
 * Admin panel
-![](images/admin_panel.png)
+![](SpringHibernate/images/admin_panel.png)
 
 * Random Data Generation home page
-![](images/rdg_home.png)
+![](SpringHibernate/images/rdg_home.png)
 
 * Generate Random Data for Applicants and Vacancies page
-![](images/rdg_random_data.png)
+![](SpringHibernate/images/rdg_random_data.png)
 
 * Generate Random Data from model page
-![](images/rdg_random_generator.png)
+![](SpringHibernate/images/rdg_random_generator.png)
 
 * Applicants page
-![](images/applicants.png)
+![](SpringHibernate/images/applicants.png)
 
 * Vacancies page
-![](images/vacancies.png)
+![](SpringHibernate/images/vacancies.png)
 
