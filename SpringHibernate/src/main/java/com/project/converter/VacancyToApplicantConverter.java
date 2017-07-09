@@ -1,6 +1,5 @@
 package com.project.converter;
 
-
 import com.project.model.Vacancy;
 import com.project.service.ServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +26,7 @@ public class VacancyToApplicantConverter implements Converter<Object, Vacancy> {
             return (Vacancy) element;
         } else {
             Integer id = Integer.parseInt((String) element);
-            vacancy = vacancyService.findById(id);
+            vacancy = vacancyService.findByIdOrdinalNumber(id, -1);
         }
         return vacancy;
     }

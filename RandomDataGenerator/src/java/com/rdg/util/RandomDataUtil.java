@@ -485,23 +485,22 @@ public class RandomDataUtil {
                                         if (RandomUtil.listOfBasicTypes.contains(vectorParam.getName())) {
                                             vector.add(getRandomBasicObjectValue(vectorParam.getName(), false, null, obj.getClass().getName()));
                                         } else {
-                                            if (!hmFilledClasses.containsKey(vectorParam.getName())) {
-                                                return obj;
-                                            } else {
+                                            if (hmFilledClasses.containsKey(vectorParam.getName())) {
                                                 Object object = hmFilledClasses.get(vectorParam.getName()).get(RandomUtil.getRandomPrimitiveInt(Const.ZERO, hmFilledClasses.get(vectorParam.getName()).size() - Const.ONE));
                                                 vector.add(object);
+                                            } else {
+                                                getFilledBasicData(vectorParam.getName());
+                                                if (hmFilledClasses.containsKey(vectorParam.getName())) {
+                                                    Object object = hmFilledClasses.get(vectorParam.getName()).get(RandomUtil.getRandomPrimitiveInt(Const.ZERO, hmFilledClasses.get(vectorParam.getName()).size() - Const.ONE));
+                                                    vector.add(object);
+                                                }
                                             }
-
                                         }
                                     }
                                     if (vectorParams.size() > 1) {
                                         tempObject = new HashMap<>();
                                         ((HashMap) tempObject).put(vector.get(Const.ZERO), vector.get(Const.ONE));
-                                    } else {
-                                        tempObject = new HashSet<>();
-                                        ((HashSet) tempObject).add(vector.get(Const.ZERO));
                                     }
-
                                 }
                                 invokeMethodOnObject(obj, method, tempObject);
                             }

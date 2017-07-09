@@ -8,13 +8,12 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @Repository("vacancyDao")
 public class VacancyDaoImpl extends AbstractDao<Integer, Vacancy> implements DaoInterface<Vacancy> {
 
     @Override
-    public Vacancy findById(int id) {
-        return getByKey(id);
+    public Vacancy findByIdOrdinalNumber(int id, int ordinalNumber) {
+        return getByKey(id, ordinalNumber);
     }
 
     @Override
@@ -43,7 +42,7 @@ public class VacancyDaoImpl extends AbstractDao<Integer, Vacancy> implements Dao
     }
 
     @Override
-    public void delete(Integer id) {
+    public void delete(Integer id, Integer ordinalNumber) {
         Criteria crit = createEntityCriteria();
         crit.add(Restrictions.eq("id", id));
         Vacancy vacancy = (Vacancy) crit.uniqueResult();

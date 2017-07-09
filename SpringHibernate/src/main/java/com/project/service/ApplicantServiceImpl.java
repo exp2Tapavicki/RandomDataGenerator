@@ -2,6 +2,9 @@ package com.project.service;
 
 import com.project.dao.DaoInterface;
 import com.project.model.Applicant;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.sql.Date;
 import java.util.List;
 
+import javax.validation.Validator;
 
 @Service("applicantService")
 @Transactional
@@ -17,9 +21,15 @@ public class ApplicantServiceImpl implements ServiceInterface<Applicant> {
     @Autowired
     private DaoInterface<Applicant> dao;
 
+    @Autowired
+    private Validator validator;
+
+    @Autowired
+    private SessionFactory sessionFactory;
+
     @Override
-    public Applicant findById(int id) {
-        return dao.findById(id);
+    public Applicant findByIdOrdinalNumber(int id, int ordinalNumber) {
+        return dao.findByIdOrdinalNumber(id, ordinalNumber);
     }
 
     @Override
@@ -29,7 +39,7 @@ public class ApplicantServiceImpl implements ServiceInterface<Applicant> {
 
     @Override
     public void update(Applicant applicant) {
-        Applicant entity = dao.findById(applicant.getId());
+        Applicant entity = dao.findByIdOrdinalNumber(applicant.getId(), -1);
         if (entity != null) {
             entity.setFirstName(applicant.getFirstName());
             entity.setLastName(applicant.getLastName());
@@ -51,8 +61,8 @@ public class ApplicantServiceImpl implements ServiceInterface<Applicant> {
     }
 
     @Override
-    public void delete(Integer id) {
-        dao.delete(id);
+    public void delete(Integer id, Integer ordinalNumber) {
+        dao.delete(id, -1);
     }
 
     @Override
@@ -63,5 +73,15 @@ public class ApplicantServiceImpl implements ServiceInterface<Applicant> {
     @Override
     public List<Applicant> search(Applicant applicant) {
         return dao.search(applicant);
+    }
+
+    @Override
+    public Validator getValidator() {
+        return validator;
+    }
+
+    @Override
+    public Session getSession() {
+        return sessionFactory.openSession();
     }
 }

@@ -1,6 +1,8 @@
 package com.project.dao;
 
 import com.project.model.RandomDataGeneration;
+import com.project.model.User;
+
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
@@ -11,8 +13,8 @@ import java.util.List;
 public class RandomDataGenerationDaoImpl extends AbstractDao<Integer, RandomDataGeneration>
         implements DaoInterface<RandomDataGeneration> {
     @Override
-    public RandomDataGeneration findById(int id) {
-        return getByKey(id);
+    public RandomDataGeneration findByIdOrdinalNumber(int id, int ordinalNumber) {
+        return getByKey(id, ordinalNumber);
     }
 
     @Override
@@ -24,20 +26,23 @@ public class RandomDataGenerationDaoImpl extends AbstractDao<Integer, RandomData
 
     @Override
     public void save(RandomDataGeneration randomDataGeneration) {
-        persist(randomDataGeneration);
+        getSession().save(randomDataGeneration);
     }
 
     @Override
-    public void delete(Integer id) {
+    public void delete(Integer id, Integer ordinalNumber) {
         Criteria crit = createEntityCriteria();
         crit.add(Restrictions.eq("id", id));
+        crit.add(Restrictions.eq("ordinalNumber", ordinalNumber));
         RandomDataGeneration randomDataGeneration = (RandomDataGeneration) crit.uniqueResult();
         delete(randomDataGeneration);
     }
 
     @Override
     public List<RandomDataGeneration> search(RandomDataGeneration object) {
-        return null;
+        Criteria crit = createEntityCriteria();
+        crit.add(Restrictions.eq("id", object.getRandomDataGenerationModel().getId()));
+        return crit.list();
     }
 
 }

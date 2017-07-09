@@ -1,9 +1,20 @@
 package com.project.model;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
-import javax.persistence.*;
 import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Table(name = "random_data_generation")
@@ -11,8 +22,10 @@ public class RandomDataGeneration implements Serializable {
 
     private static final long serialVersionUID = -2186063879911465403L;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Id
+    @Column(name = "ordinal_number", nullable = false)
+    private Integer ordinalNumber;
     @NotEmpty
     @Column(name = "basic_class_constants", nullable = false)
     private String basicClassConstants;
@@ -29,6 +42,17 @@ public class RandomDataGeneration implements Serializable {
     private boolean bAllowNulls = true;
     @Column(name = "obj_enum", nullable = false)
     private String objEnum;
+    @ManyToOne(fetch=FetchType.EAGER)
+    @JoinColumn(name = "id", nullable = false, insertable=false, updatable=false)
+    private RandomDataGenerationModel randomDataGenerationModel;
+
+    public RandomDataGenerationModel getRandomDataGenerationModel() {
+        return randomDataGenerationModel;
+    }
+
+    public void setRandomDataGenerationModel(RandomDataGenerationModel randomDataGenerationModel) {
+        this.randomDataGenerationModel = randomDataGenerationModel;
+    }
 
     public Integer getId() {
         return id;
@@ -92,5 +116,13 @@ public class RandomDataGeneration implements Serializable {
 
     public void setObjEnum(String objEnum) {
         this.objEnum = objEnum;
+    }
+
+    public Integer getOrdinalNumber() {
+        return ordinalNumber;
+    }
+
+    public void setOrdinalNumber(Integer ordinalNumber) {
+        this.ordinalNumber = ordinalNumber;
     }
 }

@@ -53,9 +53,8 @@ public class Applicant implements Serializable {
     private Date updateTime;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
-    @JoinTable(name = "vacancy_applicant",
-            joinColumns = {@JoinColumn(name = "applicant_id")},
-            inverseJoinColumns = {@JoinColumn(name = "vacancy_id")})
+    @JoinTable(name = "vacancy_applicant", joinColumns = { @JoinColumn(name = "applicant_id") }, inverseJoinColumns = {
+            @JoinColumn(name = "vacancy_id") })
     private Set<Vacancy> vacancies = new HashSet<>();
 
     public Integer getId() {

@@ -25,9 +25,8 @@ public class Vacancy implements Serializable {
     private String vacancyCode;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
-    @JoinTable(name = "vacancy_applicant",
-            joinColumns = {@JoinColumn(name = "vacancy_id")},
-            inverseJoinColumns = {@JoinColumn(name = "applicant_id")})
+    @JoinTable(name = "vacancy_applicant", joinColumns = { @JoinColumn(name = "vacancy_id") }, inverseJoinColumns = {
+            @JoinColumn(name = "applicant_id") })
     private Set<Applicant> applicants = new HashSet<>();
 
     public Integer getId() {

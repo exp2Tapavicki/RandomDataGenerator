@@ -12,13 +12,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-
 @Repository("applicantDao")
 public class ApplicantDaoImpl extends AbstractDao<Integer, Applicant> implements DaoInterface<Applicant> {
 
     @Override
-    public Applicant findById(int id) {
-        Applicant applicant = getByKey(id);
+    public Applicant findByIdOrdinalNumber(int id, int ordinalNumber) {
+        Applicant applicant = getByKey(id, -1);
         if (applicant != null) {
             Hibernate.initialize(applicant.getVacancies());
         }
@@ -28,7 +27,8 @@ public class ApplicantDaoImpl extends AbstractDao<Integer, Applicant> implements
     @Override
     public List<Applicant> findAll() {
         Criteria criteria = createEntityCriteria().addOrder(Order.asc("firstName"));
-        criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);//To avoid duplicates.
+        criteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);// To avoid
+                                                                     // duplicates.
         List<Applicant> applicants = criteria.list();
         for (Applicant applicant : applicants) {
             Hibernate.initialize(applicant.getVacancies());
@@ -42,7 +42,7 @@ public class ApplicantDaoImpl extends AbstractDao<Integer, Applicant> implements
     }
 
     @Override
-    public void delete(Integer id) {
+    public void delete(Integer id, Integer ordinalNumber) {
         Criteria crit = createEntityCriteria();
         crit.add(Restrictions.eq("id", id));
         Applicant applicant = (Applicant) crit.uniqueResult();
@@ -66,7 +66,8 @@ public class ApplicantDaoImpl extends AbstractDao<Integer, Applicant> implements
                 crit.add(Restrictions.eq("jmbg", applicant.getJmbg()));
             }
             if (applicant.getVacancies() != null && !applicant.getVacancies().isEmpty()) {
-                ArrayList<Integer> alKeys = applicant.getVacancies().stream().map(Vacancy::getId).collect(Collectors.toCollection(ArrayList::new));
+                ArrayList<Integer> alKeys = applicant.getVacancies().stream().map(Vacancy::getId)
+                        .collect(Collectors.toCollection(ArrayList::new));
                 crit.createAlias("vacancies", "vacanciesAlias");
                 crit.add(Restrictions.in("vacanciesAlias.id", alKeys));
             }
