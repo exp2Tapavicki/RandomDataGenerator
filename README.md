@@ -34,8 +34,11 @@ Clone or download project. Install MySQL server(mine is 5.7) and import database
 
 Download and setup Apache Tomcat within workspace IDE. Import project as Maven Project.
 
+Set database connection settings in applicaton.properties.
 
-# Web Application
+There is some app_user inserted already. For everyone password is 'asdasd'. Explore the web application.
+
+# Web Application Screenshots
 
 * Login page
 ![](SpringHibernate/images/login.png)
