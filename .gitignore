@@ -2,4 +2,8 @@
 /RandomDataGenerator/target/
 /SpringHibernate/target/
 /RandomDataGenerator/.idea/
+/RandomDataGenerator/.settings
 /SpringHibernate/SpringHibernate.iml
+/SpringHibernate/.settings
+.idea
+.settings
