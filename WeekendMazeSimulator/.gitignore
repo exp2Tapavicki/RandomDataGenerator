@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+/RandomDataGenerator/target/
+/SpringHibernate/target/
+/RandomDataGenerator/.idea/
+/RandomDataGenerator/.settings
+/RandomDataGenerator/RandomDataGenerator.iml
+/SpringHibernate/SpringHibernate.iml
+/SpringHibernate/.settings
+/WeekendMazeSimulator/.idea/
+/WeekendMazeSimulator/WeekendMazeSimulator.iml
+.idea
+.settings
