@@ -97,16 +97,17 @@ Run it.
 After training is started you can go to [here](http://localhost:9000/train/overview)
 and check out training progress.
 
-![](WeekendMazeSimulator/images/DL4J Training UI.png)
+![](WeekendMazeSimulator/images/DL4JTrainingUI.png)
 
 Currently RNN GravesLSTM model have this scores with 4 classes. Notice that I didn't use 
 one vs all.
  
+ Scores | Percentages
 ---|---:
- Accuracy | 0.8163
- Precision | 0.7070
- Recall | 0.8442
- F1 Score | 0.6873
+ Accuracy | 81.63
+ Precision | 70.70
+ Recall | 84.42
+ F1 Score | 68.73
 
 Precision, recall & F1: macro-averaged (equally weighted avg. of 4 classes)
 
