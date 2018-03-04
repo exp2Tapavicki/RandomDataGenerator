@@ -22,15 +22,16 @@ public class WeekendMazeSimulator {
 
     public static void main(String[] args) {
         Configuration configuration = new Configuration();
-        configuration.setNumberOfFood(50);
+        configuration.setNumberOfFood(5);
         configuration.setFoodEnergy(100);
-        configuration.setNumberOfPlayers(50);
+        configuration.setNumberOfPlayers(5);
         configuration.setPlayersEnergy(100);
-        configuration.setSizeOfMaze(5);
+        configuration.setSizeOfMaze(3);
         configuration.setSizeOfCell(15);
         configuration.setSleepTime(500);
         configuration.setAiLogicTypes(AILogicTypes.RANDOM);
-        configuration.setNumberOfEpoch(6);
+        configuration.setNumberOfEpoch(4);
+        configuration.setListenerFrequency(200);
         HibertMaze hibertMaze = new HibertMaze();
         hibertMaze.create(configuration);
         AILogic aILogic = new AILogic(hibertMaze, configuration);

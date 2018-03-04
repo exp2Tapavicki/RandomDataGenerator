@@ -1,11 +1,14 @@
 # Created by .ignore support plugin (hsz.mobi)
 /RandomDataGenerator/target/
 /SpringHibernate/target/
+/EightQueensPuzzle/target/
 /RandomDataGenerator/.idea/
 /RandomDataGenerator/.settings
 /SpringHibernate/SpringHibernate.iml
 /SpringHibernate/.settings
 /WeekendMazeSimulator/.idea/
 /WeekendMazeSimulator/WeekendMazeSimulator.iml
+/EightQueensPuzzle/.idea/
+/EightQueensPuzzle/WeekendMazeSimulator.iml
 .idea
 .settings

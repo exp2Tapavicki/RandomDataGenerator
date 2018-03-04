@@ -7,6 +7,9 @@ import com.rdg.util.RandomUtil;
 import enumeration.Move;
 import models.Configuration;
 import models.Player;
+import org.deeplearning4j.api.storage.StatsStorage;
+import org.deeplearning4j.ui.api.UIServer;
+import org.deeplearning4j.ui.storage.InMemoryStatsStorage;
 
 import javax.swing.*;
 
@@ -37,13 +40,25 @@ public class AILogic implements Runnable {
     @Override
     public void run() {
         AILogicInterface aiLogicInterface;
+        //Initialize the user interface backend
+        UIServer uiServer = UIServer.getInstance();
+
+        //Configure where the network information (gradients, score vs. time etc) is to be stored. Here: store in memory.
+        StatsStorage statsStorage = new InMemoryStatsStorage();         //Alternative: new FileStatsStorage(File), for saving and loading later
+
+        //Attach the StatsStorage instance to the UI: this allows the contents of the StatsStorage to be visualized
+        uiServer.attach(statsStorage);
+
+
         switch (configuration.getAiLogicTypes()) {
             case RNN_BASIC:
                 aiLogicInterface = new RNNBasic(hibertMaze, configuration, hibertMaze.getHibertMazeGUI().getMaze());
                 System.out.println("Create neural network");
-                aiLogicInterface.create();
+                aiLogicInterface.create(statsStorage);
                 System.out.println("Train neural network");
                 aiLogicInterface.train();
+                System.out.println("Evaluate neural network");
+                aiLogicInterface.evaluate();
                 break;
             case RANDOM:
                 aiLogicInterface = null;

@@ -2,6 +2,7 @@ package aiLogic;
 
 import enumeration.Move;
 import models.Player;
+import org.deeplearning4j.api.storage.StatsStorage;
 
 /*
 * Copyright 2017 Radislav Tapavicki <radislavtt@gmail.com>
@@ -19,9 +20,11 @@ import models.Player;
 * limitations under the License.
 */
 public interface AILogicInterface {
-    void create();
+    void create(StatsStorage statsStorage);
 
     void train();
+
+    void evaluate();
 
     Move move(Player player);
 

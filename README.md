@@ -71,15 +71,16 @@ Game goal is for every player to survive as long as possible.
 Everything is dynamically configurable through Configuration class.
     
     Configuration configuration = new Configuration();
-    configuration.setNumberOfFood(50);
+    configuration.setNumberOfFood(5);
     configuration.setFoodEnergy(100);
-    configuration.setNumberOfPlayers(50);
+    configuration.setNumberOfPlayers(5);
     configuration.setPlayersEnergy(100);
-    configuration.setSizeOfMaze(5);
+    configuration.setSizeOfMaze(3);
     configuration.setSizeOfCell(15);
     configuration.setSleepTime(500);
-    configuration.setAiLogicTypes(AILogicTypes.RANDOM);
-    configuration.setNumberOfEpoch(6);
+    configuration.setAiLogicTypes(AILogicTypes.Random);
+    configuration.setNumberOfEpoch(4);
+    configuration.setListenerFrequency(200);
 
 At the moment I didn't found out suitable model to apply. 
 Limits for everything is resources you have(Processor and memory).
@@ -93,6 +94,23 @@ Clone or download project. Import project as Maven Project.
 Check out WeekendMazeSimulator class, main method and Configuration.
 Run it.
 
+After training is started you can go to [here](http://localhost:9000/train/overview)
+and check out training progress.
+
+![](WeekendMazeSimulator/images/DL4J Training UI.png)
+
+Currently RNN GravesLSTM model have this scores with 4 classes. Notice that I didn't use 
+one vs all.
+ 
+---|---:
+ Accuracy | 0.8163
+ Precision | 0.7070
+ Recall | 0.8442
+ F1 Score | 0.6873
+
+Precision, recall & F1: macro-averaged (equally weighted avg. of 4 classes)
+
+
 # Weekend Maze Simulator Screenshots
 
 * Size of maze 5, cell size 15.
@@ -103,3 +121,42 @@ Run it.
 
 # Video
 https://youtu.be/Sz74KC70j1o
+
+
+# EightQueensPuzzle
+Java, Maven, RandomDataGenerator.
+
+EightQueensPuzzle project is used for dynamical simulation eight queens problem inspired by Clay Mathematics Institute Millennium Problem.
+http://www.claymath.org/events/news/8-queens-puzzle
+    
+Checkout Configuration for dynamically options.
+    
+    Configuration configuration = new Configuration();
+    configuration.setSizeOfCell(50);
+    configuration.setSizeOfTable(8);
+    configuration.setConsoleApplication(false);
+    configuration.setNumberOfQueens(5);
+   
+Since this is Millennium Problem I didn't find solution. Goal of this project
+is to help visualize and test solution by running various random configuration
+ through Configuration class.
+
+# Getting Started
+
+Clone or download project. Import project as Maven Project. 
+Check out EightQueensPuzzle class, main method and Configuration class.
+Run it.
+
+# Eight Queens Puzzle Simulator Screenshots
+
+* Size of board = 8, number of queens = 5.
+![](EightQueensPuzzle/images/EightQueensPuzzle1.png)
+
+* Size of board = 8, number of queens = 5.
+![](EightQueensPuzzle/images/EightQueensPuzzle2.png)
+
+* Size of board = 20, number of queens = 15.
+![](EightQueensPuzzle/images/EightQueensPuzzle3.png)
+
+* Size of board = 20, number of queens = 15.
+![](EightQueensPuzzle/images/EightQueensPuzzle4.png)

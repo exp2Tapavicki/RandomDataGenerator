@@ -9,24 +9,27 @@ import models.Food;
 import models.Player;
 import models.Position;
 import opertations.PositionMoving;
+import org.deeplearning4j.api.storage.StatsStorage;
+import org.deeplearning4j.eval.Evaluation;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration.ListBuilder;
-import org.deeplearning4j.nn.conf.Updater;
-import org.deeplearning4j.nn.conf.distribution.UniformDistribution;
 import org.deeplearning4j.nn.conf.layers.GravesLSTM;
 import org.deeplearning4j.nn.conf.layers.RnnOutputLayer;
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
+import org.deeplearning4j.ui.stats.StatsListener;
 import org.nd4j.linalg.activations.Activation;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.factory.Nd4j;
+import org.nd4j.linalg.learning.config.Nesterovs;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /*
 * Copyright 2017 Radislav Tapavicki <radislavtt@gmail.com>
@@ -51,6 +54,7 @@ public class RNNBasic implements AILogicInterface {
     public static final int NUMBER_OF_FEATURE_OUTPUT = 4;
     Configuration configuration;
     int[][] maze;
+    int tbpttLength = 5000;
     private HibertMaze hibertMaze;
     private MultiLayerNetwork net;
     private INDArray input;
@@ -66,16 +70,21 @@ public class RNNBasic implements AILogicInterface {
         this.maze = maze;
     }
 
-    public void create() {
+    public void create(StatsStorage statsStorage) {
         NeuralNetConfiguration.Builder builder = new NeuralNetConfiguration.Builder();
         builder.iterations(1000);
-        builder.learningRate(0.001);
+        builder.learningRate(0.01);
         builder.optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT);
         builder.seed(123);
-        builder.biasInit(0);
+        builder.biasInit(0.2);
         builder.miniBatch(true);
-        builder.updater(Updater.RMSPROP);
+//        builder.updater(Updater.NESTEROVS);
+        builder.updater(new Nesterovs(0.01));
         builder.weightInit(WeightInit.XAVIER);
+        builder.regularization(true);
+        builder.l2(0.001);
+//        builder.gradientNormalization(GradientNormalization.ClipL2PerParamType);
+//        builder.gradientNormalizationThreshold(0.5);
 
         ListBuilder listBuilder = builder.list();
 
@@ -91,13 +100,20 @@ public class RNNBasic implements AILogicInterface {
             listBuilder.layer(i, hiddenLayerBuilder.build());
         }
 
-        RnnOutputLayer.Builder outputLayerBuilder = new RnnOutputLayer.Builder(LossFunction.NEGATIVELOGLIKELIHOOD);
-        outputLayerBuilder.activation(Activation.SOFTMAX);
+//        RnnOutputLayer.Builder outputLayerBuilder = new RnnOutputLayer.Builder(LossFunction.XENT);
+        RnnOutputLayer.Builder outputLayerBuilder = new RnnOutputLayer.Builder(LossFunction.L2);
+//        RnnOutputLayer.Builder outputLayerBuilder = new RnnOutputLayer.Builder(LossFunction.MCXENT);
+//        outputLayerBuilder.activation(Activation.SIGMOID);
+        outputLayerBuilder.activation(Activation.RELU);
+//        outputLayerBuilder.activation(Activation.SOFTMAX);
         outputLayerBuilder.nIn(HIDDEN_LAYER_WIDTH);
         outputLayerBuilder.nOut(NUMBER_OF_FEATURE_OUTPUT);
-        outputLayerBuilder.weightInit(WeightInit.DISTRIBUTION);
-        outputLayerBuilder.dist(new UniformDistribution(0, 1));
+        outputLayerBuilder.weightInit(WeightInit.XAVIER);
+//        outputLayerBuilder.dist(new UniformDistribution(0, 1));
         listBuilder.layer(HIDDEN_LAYER_CONT, outputLayerBuilder.build());
+//        listBuilder.backpropType(BackpropType.TruncatedBPTT);
+//        listBuilder.tBPTTForwardLength(tbpttLength);
+//        listBuilder.tBPTTBackwardLength(tbpttLength);
 
         listBuilder.pretrain(false);
         listBuilder.backprop(true);
@@ -106,7 +122,13 @@ public class RNNBasic implements AILogicInterface {
         MultiLayerConfiguration conf = listBuilder.build();
         net = new MultiLayerNetwork(conf);
         net.init();
-        net.setListeners(new ScoreIterationListener(1000));
+
+//        net.setListeners(new ScoreIterationListener(configuration.getListenerFrequency()));
+        //Then add the StatsListener to collect this information from the network, as it trains
+        List list = new ArrayList();
+        list.add(new StatsListener(statsStorage, configuration.getListenerFrequency()));
+        list.add(new ScoreIterationListener(configuration.getListenerFrequency()));
+        net.setListeners(list);
 
 		/*
          * CREATE OUR TRAINING DATA
@@ -176,6 +198,13 @@ public class RNNBasic implements AILogicInterface {
         testInit.putScalar(13, player.getPosition().getX() == food.getPosition().getX() && player.getPosition().getY() == food.getPosition().getY() ? 1.00d : 0.00d);
 
         output = net.rnnTimeStep(testInit);
+    }
+
+    @Override
+    public void evaluate() {
+        Evaluation evaluation = new Evaluation(4);
+        evaluation.eval(labels, input, net);
+        System.out.println(evaluation.stats());
     }
 
     public Move move(Player player) {

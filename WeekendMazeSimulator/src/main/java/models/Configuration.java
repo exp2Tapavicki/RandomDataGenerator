@@ -27,6 +27,7 @@ public class Configuration {
     private int foodEnergy;
     private int sleepTime;
     private AILogicTypes aiLogicTypes;
+    private int listenerFrequency;
 
     public int getNumberOfEpoch() {
         return numberOfEpoch;
@@ -98,5 +99,13 @@ public class Configuration {
 
     public void setAiLogicTypes(AILogicTypes aiLogicTypes) {
         this.aiLogicTypes = aiLogicTypes;
+    }
+
+    public int getListenerFrequency() {
+        return listenerFrequency;
+    }
+
+    public void setListenerFrequency(int listenerFrequency) {
+        this.listenerFrequency = listenerFrequency;
     }
 }
